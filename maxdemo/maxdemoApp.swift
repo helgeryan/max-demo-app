@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct maxdemoApp: App {
+    @StateObject var mediaManager: MediaManager = .init()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(mediaManager)
         }
     }
 }

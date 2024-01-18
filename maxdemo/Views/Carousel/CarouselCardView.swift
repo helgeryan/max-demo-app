@@ -14,7 +14,7 @@ struct CarouselCardView: View {
     let carouselItem: CarouselItem
     var body: some View {
         ZStack {
-            Image(carouselItem.imageName)
+            Image(carouselItem.media.imageName)
                 .resizable()
                 .scaledToFill()
                 .frame(width: .fullScreenWidth, height: 500)
@@ -25,13 +25,13 @@ struct CarouselCardView: View {
             VStack {
                 Spacer()
                 
-                Image(carouselItem.secondaryImage)
+                Image(carouselItem.media.secondaryImage)
                     .resizable()
                     .scaledToFit()
                     .frame(height: 100)
                     .padding(.bottom)
                 
-                Text(carouselItem.shortDescription)
+                Text(carouselItem.media.shortDescription)
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.leading)
                     .font(.caption)

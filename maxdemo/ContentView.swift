@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var mediaManager: MediaManager
     var body: some View {
         ScrollView {
             VStack {
                 HeaderView()
                 
-                CarouselView()
+                CarouselView(items: mediaManager.getCarousel())
                 
+                HomeSectionView(section: mediaManager.getRecommendedForYou())
+                
+                HomeSectionView(section: mediaManager.getContinueWatching())
                 
                 Spacer()
             }
         }
         .background(
-            LinearGradient(colors: [.black, Color("darkblue")], startPoint: .top, endPoint: .bottom))
+            LinearGradient(colors: [.black, .black, .black, Color("darkblue")], startPoint: .top, endPoint: .bottom))
     }
 }
 
