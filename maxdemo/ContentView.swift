@@ -19,7 +19,7 @@ struct ContentView: View {
                     GeometryReader { g -> AnyView in
                         let rect = g.frame(in: .global)
                         DispatchQueue.main.async {
-                            self.barOpacity = (500.0 - rect.maxY) * 2 / 500.0
+                            self.barOpacity = (500.0 - rect.maxY) / 500.0
                         }
                         return AnyView(CarouselView(items: mediaManager.getCarousel()))
                     }
@@ -40,6 +40,7 @@ struct ContentView: View {
                         Spacer()
                     }
                 }
+                .ignoresSafeArea(edges: .top)
                 .background(
                     LinearGradient(colors: [.black, .black, .black, Color("darkblue")], startPoint: .top, endPoint: .bottom))
                 
