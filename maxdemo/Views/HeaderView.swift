@@ -29,5 +29,6 @@ struct HeaderView: View {
                 .frame(width: 25, height: 25)
                 .padding()
         }
+        .background(.black)
     }
 }

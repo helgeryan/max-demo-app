@@ -10,25 +10,35 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var mediaManager: MediaManager
     var body: some View {
-        ScrollView {
-            VStack {
-                HeaderView()
+        NavigationStack {
+            ZStack {
+                ScrollView {
+                    VStack {
+                        
+                        CarouselView(items: mediaManager.getCarousel())
+                        
+                        HomeSectionView(section: mediaManager.getRecommendedForYou())
+                        
+                        HomeSectionView(section: mediaManager.getContinueWatching())
+                        
+                        TopItemsSectionView(section: mediaManager.getTopSeries())
+                        
+                        TopItemsSectionView(section: mediaManager.getTopMovies())
+                        
+                        Spacer()
+                    }
+                }
+                .background(
+                    LinearGradient(colors: [.black, .black, .black, Color("darkblue")], startPoint: .top, endPoint: .bottom))
                 
-                CarouselView(items: mediaManager.getCarousel())
+                    
+                VStack {
+                    HeaderView()
+                    Spacer()
+                }
                 
-                HomeSectionView(section: mediaManager.getRecommendedForYou())
-                
-                HomeSectionView(section: mediaManager.getContinueWatching())
-                
-                TopItemsSectionView(section: mediaManager.getTopSeries())
-                
-                TopItemsSectionView(section: mediaManager.getTopMovies())
-                
-                Spacer()
             }
         }
-        .background(
-            LinearGradient(colors: [.black, .black, .black, Color("darkblue")], startPoint: .top, endPoint: .bottom))
     }
 }
 
