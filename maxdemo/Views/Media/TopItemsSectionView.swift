@@ -24,6 +24,7 @@ struct TopItemsSectionView: View {
                         TopItemRowView(topItem: item)
                             .padding(.leading)
                     }
+                    Spacer()
                 }
             }
             .padding(.top, 5)

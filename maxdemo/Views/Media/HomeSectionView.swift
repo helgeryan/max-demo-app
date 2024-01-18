@@ -32,6 +32,8 @@ struct HomeSectionView: View {
                                 .padding(.leading)
                         }
                     }
+                    
+                    Spacer()
                 }
             }
             .padding(.top, 5)
