@@ -9,13 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var mediaManager: MediaManager
+    @State var barOpacity: CGFloat = 0
+    
     var body: some View {
         NavigationStack {
             ZStack {
                 ScrollView {
+                    // Use this to get the fade in of the top bar
+                    GeometryReader { g -> AnyView in
+                        let rect = g.frame(in: .global)
+                        DispatchQueue.main.async {
+                            self.barOpacity = (500.0 - rect.maxY) * 2 / 500.0
+                        }
+                        return AnyView(CarouselView(items: mediaManager.getCarousel()))
+                    }
+                    .frame(height: 500)
+                    
+                    
                     VStack {
                         
-                        CarouselView(items: mediaManager.getCarousel())
                         
                         HomeSectionView(section: mediaManager.getRecommendedForYou())
                         
@@ -33,7 +45,7 @@ struct ContentView: View {
                 
                     
                 VStack {
-                    HeaderView()
+                    HeaderView(opacity: $barOpacity)
                     Spacer()
                 }
                 

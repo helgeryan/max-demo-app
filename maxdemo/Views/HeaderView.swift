@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct HeaderView: View {
+    @Binding var opacity: CGFloat
     var body: some View {
         HStack(spacing: 0) {
             Image("max", bundle: nil)
@@ -29,6 +30,6 @@ struct HeaderView: View {
                 .frame(width: 25, height: 25)
                 .padding()
         }
-        .background(.black)
+        .background(.black.opacity(opacity))
     }
 }
