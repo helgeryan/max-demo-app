@@ -20,6 +20,10 @@ struct ContentView: View {
                 
                 HomeSectionView(section: mediaManager.getContinueWatching())
                 
+                TopItemsSectionView(section: mediaManager.getTopSeries())
+                
+                TopItemsSectionView(section: mediaManager.getTopMovies())
+                
                 Spacer()
             }
         }

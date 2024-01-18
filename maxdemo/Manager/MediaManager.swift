@@ -28,4 +28,14 @@ class MediaManager: ObservableObject {
         return HomeSection(title: "Continue Watching", items: items, type: .watching)
     }
     
+    func getTopSeries() -> TopItemsSection {
+        let topItems: [TopItem] = items.enumerated().map({ return .init(index: $0, item: $1) })
+        return .init(type: .series, items: topItems)
+    }
+    
+    func getTopMovies() -> TopItemsSection {
+        let topItems: [TopItem] = items.enumerated().map({ return .init(index: $0, item: $1) })
+        return .init(type: .movie, items: topItems)
+    }
+    
 }

@@ -19,21 +19,23 @@ struct HomeSectionView: View {
                     .padding(.horizontal)
                 Spacer()
             }
-        }
-        .padding(.top, 8)
-        ScrollView(.horizontal) {
-            HStack(spacing: 0) {
-                ForEach(section.items, id: \.imageName) { item in
-                    switch section.type {
-                    case .general:
-                        MediaItemRowView(mediaItem: item)
-                            .padding(.leading)
-                    case .watching:
-                        ContinueWatchingMediaItemView(mediaItem: item)
-                            .padding(.leading)
+            
+            ScrollView(.horizontal) {
+                HStack(spacing: 0) {
+                    ForEach(section.items, id: \.imageName) { item in
+                        switch section.type {
+                        case .general:
+                            MediaItemRowView(mediaItem: item)
+                                .padding(.leading)
+                        case .watching:
+                            ContinueWatchingMediaItemView(mediaItem: item)
+                                .padding(.leading)
+                        }
                     }
                 }
             }
+            .padding(.top, 5)
         }
+        .padding(.top, 8)
     }
 }
