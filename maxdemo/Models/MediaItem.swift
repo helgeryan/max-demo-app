@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MediaItem {
+struct MediaItem: Hashable {
     let title: String
     let imageName: String
     let shortDescription: String

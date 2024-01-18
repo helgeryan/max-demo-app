@@ -51,6 +51,9 @@ struct ContentView: View {
                 }
                 
             }
+            .navigationDestination(for: MediaItem.self, destination: { item in
+                MediaItemView(mediaItem: item)
+            })
         }
     }
 }

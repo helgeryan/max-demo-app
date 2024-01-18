@@ -25,6 +25,7 @@
 		E665C7B22B59B4AB00CD046B /* TopItemsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7B12B59B4AB00CD046B /* TopItemsSectionView.swift */; };
 		E665C7B42B59B4CE00CD046B /* TopItemsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7B32B59B4CE00CD046B /* TopItemsSection.swift */; };
 		E665C7B62B59B53E00CD046B /* TopItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7B52B59B53E00CD046B /* TopItemRowView.swift */; };
+		E665C7B82B59C72C00CD046B /* MediaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7B72B59C72C00CD046B /* MediaItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		E665C7B12B59B4AB00CD046B /* TopItemsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopItemsSectionView.swift; sourceTree = "<group>"; };
 		E665C7B32B59B4CE00CD046B /* TopItemsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopItemsSection.swift; sourceTree = "<group>"; };
 		E665C7B52B59B53E00CD046B /* TopItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopItemRowView.swift; sourceTree = "<group>"; };
+		E665C7B72B59C72C00CD046B /* MediaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				E665C7AF2B59AB5F00CD046B /* ContinueWatchingMediaItemView.swift */,
 				E665C7B12B59B4AB00CD046B /* TopItemsSectionView.swift */,
 				E665C7B52B59B53E00CD046B /* TopItemRowView.swift */,
+				E665C7B72B59C72C00CD046B /* MediaItemView.swift */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				E665C7B22B59B4AB00CD046B /* TopItemsSectionView.swift in Sources */,
 				E665C7A92B59A4AF00CD046B /* CarouselItem.swift in Sources */,
 				E665C7A22B59A0FF00CD046B /* Extensions.swift in Sources */,
+				E665C7B82B59C72C00CD046B /* MediaItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

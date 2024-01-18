@@ -23,14 +23,17 @@ struct HomeSectionView: View {
             ScrollView(.horizontal) {
                 HStack(spacing: 0) {
                     ForEach(section.items, id: \.imageName) { item in
-                        switch section.type {
-                        case .general:
-                            MediaItemRowView(mediaItem: item)
-                                .padding(.leading)
-                        case .watching:
-                            ContinueWatchingMediaItemView(mediaItem: item)
-                                .padding(.leading)
-                        }
+                        NavigationLink(value: item, label: {
+                            switch section.type {
+                            case .general:
+                                
+                                MediaItemRowView(mediaItem: item)
+                                    .padding(.leading)
+                            case .watching:
+                                ContinueWatchingMediaItemView(mediaItem: item)
+                                    .padding(.leading)
+                            }
+                        })
                     }
                     
                     Spacer()
