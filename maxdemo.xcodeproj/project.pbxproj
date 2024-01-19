@@ -52,6 +52,7 @@
 		E665C7F12B5AC9A200CD046B /* UpdateRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F02B5AC9A200CD046B /* UpdateRowView.swift */; };
 		E665C7F32B5AC9B700CD046B /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F22B5AC9B700CD046B /* Update.swift */; };
 		E665C7F62B5ACDAF00CD046B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F52B5ACDAF00CD046B /* WelcomeView.swift */; };
+		E665C7F82B5AD97200CD046B /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F72B5AD97200CD046B /* PrivacyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		E665C7F02B5AC9A200CD046B /* UpdateRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRowView.swift; sourceTree = "<group>"; };
 		E665C7F22B5AC9B700CD046B /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		E665C7F52B5ACDAF00CD046B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		E665C7F72B5AD97200CD046B /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				E665C7F52B5ACDAF00CD046B /* WelcomeView.swift */,
+				E665C7F72B5AD97200CD046B /* PrivacyView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				E665C7A92B59A4AF00CD046B /* CarouselItem.swift in Sources */,
 				E665C7EB2B5A342100CD046B /* View+Extensions.swift in Sources */,
 				E665C7A22B59A0FF00CD046B /* CGFloat+Extensions.swift in Sources */,
+				E665C7F82B5AD97200CD046B /* PrivacyView.swift in Sources */,
 				E665C7BD2B59E9CB00CD046B /* ProfileView.swift in Sources */,
 				E665C7B82B59C72C00CD046B /* MediaItemView.swift in Sources */,
 				E665C7BA2B59E99F00CD046B /* NavigationType.swift in Sources */,

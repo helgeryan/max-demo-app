@@ -55,7 +55,6 @@ struct AccountView: View {
                     ForEach(settingsMenuItems, id: \.id) { item in
                         Button {
                             debugPrint("Doing \(item.text)")
-                            dismiss()
                             profileManager.signOut()
                         } label: {
                             HStack {

@@ -10,14 +10,7 @@ import SwiftUI
 struct WelcomeView: View {
     @EnvironmentObject var profileManager: ProfileManager
     var body: some View {
-//        ZStack {
-//            Image("welcome")
-//                .resizable()
-//                .scaledToFill()
-//                .clipped()
-//                .frame(width: .fullScreenWidth, height: .fullScreenHeight)
-            
-            VStack(spacing: 0) {
+         let content = VStack(spacing: 0) {
                 Spacer()
                 Image("max")
                     .renderingMode(.template)
@@ -67,26 +60,27 @@ struct WelcomeView: View {
                 }
                 .padding(.horizontal)
                 .padding(.bottom, 50)
-                
-                
-                Button {
-                    debugPrint("Doing privacy and terms")
-                } label: {
-                    Text("Privacy and terms")
-                        .font(.system(size: 15, weight: .bold))
-                }
-                .padding(.bottom, 50)
-            }
-            .ignoresSafeArea()
-            .background(content: {
-                Image("welcome")
-                    .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea()
-                    .overlay(.black.opacity(0.2))
-            })
+             
+             NavigationLink(destination: {
+                 PrivacyView()
+             }, label: {
+                 Text("Privacy and terms")
+                     .foregroundStyle(.blue)
+                     .font(.system(size: 15, weight: .bold))
+             })
+             .padding(.bottom, 50)
+         }
+        .ignoresSafeArea()
+        .background(content: {
+            Image("welcome")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+                .overlay(.black.opacity(0.2))
+        })
         
-//        }
+        MaxNavigationView(content: AnyView(content))
+            .tint(.white)
     }
 }
 

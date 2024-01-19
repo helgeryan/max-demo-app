@@ -13,7 +13,7 @@ struct MediaItem: Hashable {
     let shortDescription: String
     let secondaryImage: String
     var tvRating: String = "TV-MA"
-    var mediaType: MediaType = .movie
+    var mediaType: MediaType = .series
     var isNew: Bool = true
     var currentEpisode: Int? = 1
     var currentSeason: Int? = 3
