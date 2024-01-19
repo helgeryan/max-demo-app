@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DownloadContinueWatchingView: View {
+struct MyStuffContinueWatchingView: View {
     @EnvironmentObject var mediaManager: MediaManager
     var body: some View {
         VStack {

@@ -21,7 +21,7 @@ struct MainTabView: View {
                 })
                 .tag(0)
             
-                MaxNavigationView(content: AnyView(DownloadsView()))
+            MaxNavigationView(content: AnyView(MyStuffView()))
                 .tabItem({
                     VStack {
                         Spacer()
@@ -31,7 +31,7 @@ struct MainTabView: View {
                 })
                 .tag(1)
             
-            HomeView()
+            MaxNavigationView(content: AnyView(DownloadsView()))
                 .tabItem({
                     VStack {
                         Spacer()
@@ -39,7 +39,7 @@ struct MainTabView: View {
                         Spacer()
                     }
                 })
-                .tag(1)
+                .tag(2)
             
             HomeView()
                 .tabItem({
@@ -49,7 +49,7 @@ struct MainTabView: View {
                         Spacer()
                     }
                 })
-                .tag(1)
+                .tag(3)
         }
         .tint(.white)
     }

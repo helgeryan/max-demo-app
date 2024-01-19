@@ -15,7 +15,7 @@
 		E665C7992B59993600CD046B /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7982B59993600CD046B /* CarouselView.swift */; };
 		E665C79C2B59999C00CD046B /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C79B2B59999C00CD046B /* MediaItem.swift */; };
 		E665C79E2B5999B500CD046B /* CarouselCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C79D2B5999B500CD046B /* CarouselCardView.swift */; };
-		E665C7A22B59A0FF00CD046B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7A12B59A0FF00CD046B /* Extensions.swift */; };
+		E665C7A22B59A0FF00CD046B /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7A12B59A0FF00CD046B /* CGFloat+Extensions.swift */; };
 		E665C7A42B59A40300CD046B /* HomeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7A32B59A40300CD046B /* HomeSectionView.swift */; };
 		E665C7A72B59A47000CD046B /* MediaItemColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7A62B59A47000CD046B /* MediaItemColumnView.swift */; };
 		E665C7A92B59A4AF00CD046B /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7A82B59A4AF00CD046B /* CarouselItem.swift */; };
@@ -34,11 +34,17 @@
 		E665C7C82B5A036000CD046B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7C72B5A036000CD046B /* HomeView.swift */; };
 		E665C7CA2B5A038300CD046B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7C92B5A038300CD046B /* MainTabView.swift */; };
 		E665C7CC2B5A03AB00CD046B /* MaxNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7CB2B5A03AB00CD046B /* MaxNavigationView.swift */; };
-		E665C7CE2B5A054700CD046B /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7CD2B5A054700CD046B /* DownloadsView.swift */; };
+		E665C7CE2B5A054700CD046B /* MyStuffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7CD2B5A054700CD046B /* MyStuffView.swift */; };
 		E665C7D12B5A16A100CD046B /* MyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7D02B5A16A100CD046B /* MyListView.swift */; };
-		E665C7D42B5A16E900CD046B /* DownloadContinueWatchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7D32B5A16E900CD046B /* DownloadContinueWatchingView.swift */; };
+		E665C7D42B5A16E900CD046B /* MyStuffContinueWatchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7D32B5A16E900CD046B /* MyStuffContinueWatchingView.swift */; };
 		E665C7D62B5A180300CD046B /* MediaItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7D52B5A180300CD046B /* MediaItemRowView.swift */; };
 		E665C7D82B5A19B000CD046B /* ContinueWatchingMediaItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7D72B5A19B000CD046B /* ContinueWatchingMediaItemRowView.swift */; };
+		E665C7DB2B5A275100CD046B /* MyStuffOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7DA2B5A275100CD046B /* MyStuffOptionsView.swift */; };
+		E665C7DD2B5A277200CD046B /* MyStuffHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7DC2B5A277200CD046B /* MyStuffHeaderView.swift */; };
+		E665C7DF2B5A279D00CD046B /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7DE2B5A279D00CD046B /* GradientBackground.swift */; };
+		E665C7E22B5A280500CD046B /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7E12B5A280500CD046B /* DownloadsView.swift */; };
+		E665C7E42B5A288400CD046B /* DownloadHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7E32B5A288400CD046B /* DownloadHeaderView.swift */; };
+		E665C7E62B5A2C4300CD046B /* DownloadItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7E52B5A2C4300CD046B /* DownloadItemRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +57,7 @@
 		E665C7982B59993600CD046B /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		E665C79B2B59999C00CD046B /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
 		E665C79D2B5999B500CD046B /* CarouselCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCardView.swift; sourceTree = "<group>"; };
-		E665C7A12B59A0FF00CD046B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E665C7A12B59A0FF00CD046B /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		E665C7A32B59A40300CD046B /* HomeSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionView.swift; sourceTree = "<group>"; };
 		E665C7A62B59A47000CD046B /* MediaItemColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemColumnView.swift; sourceTree = "<group>"; };
 		E665C7A82B59A4AF00CD046B /* CarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
@@ -70,11 +76,17 @@
 		E665C7C72B5A036000CD046B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E665C7C92B5A038300CD046B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		E665C7CB2B5A03AB00CD046B /* MaxNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxNavigationView.swift; sourceTree = "<group>"; };
-		E665C7CD2B5A054700CD046B /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
+		E665C7CD2B5A054700CD046B /* MyStuffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStuffView.swift; sourceTree = "<group>"; };
 		E665C7D02B5A16A100CD046B /* MyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListView.swift; sourceTree = "<group>"; };
-		E665C7D32B5A16E900CD046B /* DownloadContinueWatchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadContinueWatchingView.swift; sourceTree = "<group>"; };
+		E665C7D32B5A16E900CD046B /* MyStuffContinueWatchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStuffContinueWatchingView.swift; sourceTree = "<group>"; };
 		E665C7D52B5A180300CD046B /* MediaItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemRowView.swift; sourceTree = "<group>"; };
 		E665C7D72B5A19B000CD046B /* ContinueWatchingMediaItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueWatchingMediaItemRowView.swift; sourceTree = "<group>"; };
+		E665C7DA2B5A275100CD046B /* MyStuffOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStuffOptionsView.swift; sourceTree = "<group>"; };
+		E665C7DC2B5A277200CD046B /* MyStuffHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStuffHeaderView.swift; sourceTree = "<group>"; };
+		E665C7DE2B5A279D00CD046B /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
+		E665C7E12B5A280500CD046B /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
+		E665C7E32B5A288400CD046B /* DownloadHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadHeaderView.swift; sourceTree = "<group>"; };
+		E665C7E52B5A2C4300CD046B /* DownloadItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadItemRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +177,8 @@
 		E665C7A02B59A0F100CD046B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E665C7A12B59A0FF00CD046B /* Extensions.swift */,
+				E665C7A12B59A0FF00CD046B /* CGFloat+Extensions.swift */,
+				E665C7DE2B5A279D00CD046B /* GradientBackground.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -210,7 +223,8 @@
 		E665C7C62B5A035300CD046B /* MainTabs */ = {
 			isa = PBXGroup;
 			children = (
-				E665C7CF2B5A169000CD046B /* Downloads */,
+				E665C7E02B5A27F500CD046B /* Downloads */,
+				E665C7CF2B5A169000CD046B /* MyStuff */,
 				E665C7C72B5A036000CD046B /* HomeView.swift */,
 				E665C7C92B5A038300CD046B /* MainTabView.swift */,
 				E665C7CB2B5A03AB00CD046B /* MaxNavigationView.swift */,
@@ -218,14 +232,16 @@
 			path = MainTabs;
 			sourceTree = "<group>";
 		};
-		E665C7CF2B5A169000CD046B /* Downloads */ = {
+		E665C7CF2B5A169000CD046B /* MyStuff */ = {
 			isa = PBXGroup;
 			children = (
-				E665C7CD2B5A054700CD046B /* DownloadsView.swift */,
+				E665C7CD2B5A054700CD046B /* MyStuffView.swift */,
 				E665C7D02B5A16A100CD046B /* MyListView.swift */,
-				E665C7D32B5A16E900CD046B /* DownloadContinueWatchingView.swift */,
+				E665C7D32B5A16E900CD046B /* MyStuffContinueWatchingView.swift */,
+				E665C7DA2B5A275100CD046B /* MyStuffOptionsView.swift */,
+				E665C7DC2B5A277200CD046B /* MyStuffHeaderView.swift */,
 			);
-			path = Downloads;
+			path = MyStuff;
 			sourceTree = "<group>";
 		};
 		E665C7D92B5A19BD00CD046B /* RowsColumns */ = {
@@ -237,6 +253,16 @@
 				E665C7D72B5A19B000CD046B /* ContinueWatchingMediaItemRowView.swift */,
 			);
 			path = RowsColumns;
+			sourceTree = "<group>";
+		};
+		E665C7E02B5A27F500CD046B /* Downloads */ = {
+			isa = PBXGroup;
+			children = (
+				E665C7E12B5A280500CD046B /* DownloadsView.swift */,
+				E665C7E32B5A288400CD046B /* DownloadHeaderView.swift */,
+				E665C7E52B5A2C4300CD046B /* DownloadItemRowView.swift */,
+			);
+			path = Downloads;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,8 +337,12 @@
 			files = (
 				E665C7AC2B59A76500CD046B /* MediaManager.swift in Sources */,
 				E665C78A2B5995B500CD046B /* ContentView.swift in Sources */,
-				E665C7D42B5A16E900CD046B /* DownloadContinueWatchingView.swift in Sources */,
+				E665C7E22B5A280500CD046B /* DownloadsView.swift in Sources */,
+				E665C7D42B5A16E900CD046B /* MyStuffContinueWatchingView.swift in Sources */,
+				E665C7E42B5A288400CD046B /* DownloadHeaderView.swift in Sources */,
 				E665C7AE2B59A90400CD046B /* HomeSection.swift in Sources */,
+				E665C7DD2B5A277200CD046B /* MyStuffHeaderView.swift in Sources */,
+				E665C7DF2B5A279D00CD046B /* GradientBackground.swift in Sources */,
 				E665C7A42B59A40300CD046B /* HomeSectionView.swift in Sources */,
 				E665C7B62B59B53E00CD046B /* TopItemRowView.swift in Sources */,
 				E665C7972B59991800CD046B /* HeaderView.swift in Sources */,
@@ -321,18 +351,20 @@
 				E665C7B02B59AB5F00CD046B /* ContinueWatchingMediaItemColumnView.swift in Sources */,
 				E665C7C52B59F9B300CD046B /* UpdatesView.swift in Sources */,
 				E665C7B42B59B4CE00CD046B /* TopItemsSection.swift in Sources */,
+				E665C7DB2B5A275100CD046B /* MyStuffOptionsView.swift in Sources */,
 				E665C7CA2B5A038300CD046B /* MainTabView.swift in Sources */,
 				E665C79C2B59999C00CD046B /* MediaItem.swift in Sources */,
 				E665C7C02B59EA5D00CD046B /* ProfileManager.swift in Sources */,
-				E665C7CE2B5A054700CD046B /* DownloadsView.swift in Sources */,
+				E665C7CE2B5A054700CD046B /* MyStuffView.swift in Sources */,
 				E665C7D12B5A16A100CD046B /* MyListView.swift in Sources */,
+				E665C7E62B5A2C4300CD046B /* DownloadItemRowView.swift in Sources */,
 				E665C7D82B5A19B000CD046B /* ContinueWatchingMediaItemRowView.swift in Sources */,
 				E665C7882B5995B500CD046B /* maxdemoApp.swift in Sources */,
 				E665C7A72B59A47000CD046B /* MediaItemColumnView.swift in Sources */,
 				E665C7D62B5A180300CD046B /* MediaItemRowView.swift in Sources */,
 				E665C7B22B59B4AB00CD046B /* TopItemsSectionView.swift in Sources */,
 				E665C7A92B59A4AF00CD046B /* CarouselItem.swift in Sources */,
-				E665C7A22B59A0FF00CD046B /* Extensions.swift in Sources */,
+				E665C7A22B59A0FF00CD046B /* CGFloat+Extensions.swift in Sources */,
 				E665C7BD2B59E9CB00CD046B /* ProfileView.swift in Sources */,
 				E665C7B82B59C72C00CD046B /* MediaItemView.swift in Sources */,
 				E665C7BA2B59E99F00CD046B /* NavigationType.swift in Sources */,

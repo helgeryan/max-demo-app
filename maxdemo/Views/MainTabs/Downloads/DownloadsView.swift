@@ -7,112 +7,80 @@
 
 import SwiftUI
 
-struct DownloadPageOption: Hashable {
-    let text: String
-    let index: Int
-}
-
 struct DownloadsView: View {
+    @EnvironmentObject var profileManager: ProfileManager
     @EnvironmentObject var mediaManager: MediaManager
-    @State var selectedIndex: Int = 0
     var body: some View {
-        VStack {
-            DownloadsHeaderView()
-            DownloadOptionsView(selectedIndex: $selectedIndex)
-                .padding()
+        VStack(spacing: 0) {
+            DownloadHeaderView()
+            
+            HStack {
+                Button {
+                    debugPrint("Editting profiles")
+                } label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 8)
+                            .foregroundStyle(Color("editcolor"))
+                            .frame(width: 40, height: 40)
+                        Image(systemName: "gear")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 22, height: 22)
+                            .foregroundStyle(.white)
+                    }
+                    .background(Color("editcolor"))
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .clipped()
+                    .frame(width: 40, height: 40)
+                }
+                Spacer()
+                
+                Button {
+                    debugPrint("Editting profiles")
+                } label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 8)
+                            .foregroundStyle(Color("editcolor"))
+                            .frame(width: 160, height: 40)
+                        Text("Edit")
+                            .foregroundStyle(.white)
+                            .font(.system(size: 16, weight: .bold))
+                    }
+                }
+            }
+            .padding(.horizontal)
             
             ScrollView {
-                switch selectedIndex {
-                case 0:
-                    MyListView()
-                default:
-                    DownloadContinueWatchingView()
+                VStack(spacing: 0) {
+                    HStack {
+                        Image("profile")
+                            .resizable()
+                            .foregroundStyle(.gray)
+                            .frame(width: 25, height: 25)
+                        Text(profileManager.selectedProfile.name)
+                            .foregroundStyle(.white)
+                            .font(.system(size: 14, weight: .bold))
+                        Spacer()
+                    }
+                    .padding([.horizontal,.top])
+                    
+                    ForEach(mediaManager.items, id: \.self) { item in
+                        DownloadItemRowView(mediaItem: item)
+                            .padding([.horizontal,.top])
+                    }
                 }
                 
-                HomeSectionView(section: mediaManager.getRecommendedForYou())
-                    .padding(.vertical)
             }
+            
+            
+            Spacer()
+            
+            
         }
         .modifier(GradientBackground())
     }
 }
 
-
-struct DownloadOptionsView: View {
-    @Binding var selectedIndex: Int
-    var options: [DownloadPageOption] = [
-        .init(text: "My List", index: 0),
-        .init(text: "Continue Watching", index: 1)
-        
-    ]
-    var body: some View {
-        ZStack {
-            VStack {
-                Spacer()
-                Rectangle()
-                    .frame(height: 1)
-                    .foregroundStyle(.gray)
-            }
-            
-            HStack {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        withAnimation {
-                            selectedIndex = option.index
-                        }
-                    } label: {
-                        VStack {
-                            Spacer()
-                            Text(option.text)
-                                .foregroundStyle(.white)
-                                .font(.system(size: 18, weight: .regular))
-                                Rectangle()
-                                    .frame(height: 1)
-                                    .foregroundStyle(.white)
-                                    .opacity(selectedIndex == option.index ? 1 : 0)
-                        }
-                        .frame(width: 160)
-                    }
-                }
-                Spacer()
-            }
-        }
-        .frame(height: 40)
-        
-    }
-}
-
-struct DownloadsHeaderView: View {
-    var opacity: CGFloat = 1
-    var body: some View {
-        HStack(spacing: 0) {
-            Text("My Stuff")
-                .foregroundStyle(.white)
-                .font(.system(size: 20, weight: .bold))
-                .padding()
-            Spacer()
-            NavigationLink(value: NavigationType.updates, label: {
-                Image(systemName: "bell")
-                    .resizable()
-                    .frame(width: 25, height: 25)
-                    .foregroundStyle(.white)
-            })
-            NavigationLink(value: NavigationType.profile, label: {
-                Image("profile")
-                    .resizable()
-                    .foregroundStyle(.gray)
-                    .frame(width: 25, height: 25)
-                    .padding()
-            })
-        }
-        .background(.black.opacity(opacity))
-    }
-}
-struct GradientBackground: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .background(
-                LinearGradient(colors: [.black, .black, .black, Color("darkblue")], startPoint: .top, endPoint: .bottom)
-            )
-    }
+#Preview {
+    DownloadsView()
 }
