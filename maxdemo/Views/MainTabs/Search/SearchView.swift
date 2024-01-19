@@ -10,7 +10,6 @@ import SwiftUI
 struct SearchView: View {
     @EnvironmentObject var mediaManager: MediaManager
     @State var searchText: String = ""
-    @State var isTextFieldFocused: Bool = false
     @FocusState var focusState: Bool
     var body: some View {
         VStack {
@@ -19,24 +18,23 @@ struct SearchView: View {
                     Image(systemName: "magnifyingglass")
                         .resizable()
                         .scaledToFit()
-                        .foregroundStyle(isTextFieldFocused ? .white : .gray)
+                        .foregroundStyle(focusState ? .white : .gray)
                         .frame(width: 20, height: 20)
                     TextField("Find movies, shows, and more", text: $searchText)
                         .placeholder(when: searchText.isEmpty) {
                             Text("Find movies, shows, and more").foregroundColor(.gray)
                         }
                         .focused($focusState)
-                        .foregroundStyle(isTextFieldFocused ? .white : .gray)
+                        .foregroundStyle(focusState ? .white : .gray)
                         
                     Spacer()
                 }
                 .padding()
-                .background(isTextFieldFocused ? Color("focuscolor") : Color("editcolor"))
+                .background(focusState ? Color("focuscolor") : Color("editcolor"))
                 .clipShape(RoundedRectangle(cornerRadius: 4))
                 .clipped()
                 .onTapGesture {
                     withAnimation {
-                        isTextFieldFocused.toggle()
                         focusState.toggle()
                     }
                 }
