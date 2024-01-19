@@ -69,15 +69,15 @@ struct WelcomeView: View {
                      .font(.system(size: 15, weight: .bold))
              })
              .padding(.bottom, 50)
-         }
-        .ignoresSafeArea()
-        .background(content: {
-            Image("welcome")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-                .overlay(.black.opacity(0.2))
-        })
+        }
+            .ignoresSafeArea()
+            .background(content: {
+                Image("welcome")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+                    .overlay(.black.opacity(0.2))
+            })
         
         MaxNavigationView(content: AnyView(content))
             .tint(.white)
