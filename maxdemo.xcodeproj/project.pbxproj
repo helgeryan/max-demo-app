@@ -54,6 +54,8 @@
 		E665C7F62B5ACDAF00CD046B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F52B5ACDAF00CD046B /* WelcomeView.swift */; };
 		E665C7F82B5AD97200CD046B /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F72B5AD97200CD046B /* PrivacyView.swift */; };
 		E665C7FA2B5AEE7800CD046B /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F92B5AEE7800CD046B /* ActivityViewController.swift */; };
+		E665C7FC2B5AF48500CD046B /* MediaQuickLookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7FB2B5AF48500CD046B /* MediaQuickLookView.swift */; };
+		E665C7FE2B5AF69C00CD046B /* MediaMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7FD2B5AF69C00CD046B /* MediaMenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +107,8 @@
 		E665C7F52B5ACDAF00CD046B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		E665C7F72B5AD97200CD046B /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
 		E665C7F92B5AEE7800CD046B /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		E665C7FB2B5AF48500CD046B /* MediaQuickLookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaQuickLookView.swift; sourceTree = "<group>"; };
+		E665C7FD2B5AF69C00CD046B /* MediaMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,8 @@
 				E665C7B72B59C72C00CD046B /* MediaItemView.swift */,
 				E665C7B52B59B53E00CD046B /* TopItemRowView.swift */,
 				E665C7B12B59B4AB00CD046B /* TopItemsSectionView.swift */,
+				E665C7FB2B5AF48500CD046B /* MediaQuickLookView.swift */,
+				E665C7FD2B5AF69C00CD046B /* MediaMenuButton.swift */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -398,6 +404,7 @@
 				E665C7C52B59F9B300CD046B /* UpdatesView.swift in Sources */,
 				E665C7EF2B5AC65100CD046B /* SearchRowView.swift in Sources */,
 				E665C7B42B59B4CE00CD046B /* TopItemsSection.swift in Sources */,
+				E665C7FE2B5AF69C00CD046B /* MediaMenuButton.swift in Sources */,
 				E665C7DB2B5A275100CD046B /* MyStuffOptionsView.swift in Sources */,
 				E665C7CA2B5A038300CD046B /* MainTabView.swift in Sources */,
 				E665C79C2B59999C00CD046B /* MediaItem.swift in Sources */,
@@ -410,6 +417,7 @@
 				E665C7D82B5A19B000CD046B /* ContinueWatchingMediaItemRowView.swift in Sources */,
 				E665C7882B5995B500CD046B /* maxdemoApp.swift in Sources */,
 				E665C7A72B59A47000CD046B /* MediaItemColumnView.swift in Sources */,
+				E665C7FC2B5AF48500CD046B /* MediaQuickLookView.swift in Sources */,
 				E665C7F32B5AC9B700CD046B /* Update.swift in Sources */,
 				E665C7D62B5A180300CD046B /* MediaItemRowView.swift in Sources */,
 				E665C7B22B59B4AB00CD046B /* TopItemsSectionView.swift in Sources */,

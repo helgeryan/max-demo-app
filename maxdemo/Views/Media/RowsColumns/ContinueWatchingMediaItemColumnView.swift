@@ -33,17 +33,7 @@ struct ContinueWatchingMediaItemColumnView: View {
                     }
                     Spacer()
                     VStack {
-                        Button {
-                            debugPrint("Do action items")
-                        } label: {
-                            Image(systemName: "ellipsis")
-                                .resizable()
-                                .scaledToFit()
-                                .foregroundStyle(.white)
-                                .frame(width: 20, height: 20)
-                                .padding(5)
-                        }
-                        .shadow(radius: 10)
+                        MediaMenuButton(item: mediaItem)
                         Spacer()
                     }
                 }
