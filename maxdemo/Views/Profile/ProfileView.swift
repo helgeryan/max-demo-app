@@ -7,8 +7,24 @@
 
 import SwiftUI
 
+struct SettingsMenuItem {
+    let id: String = UUID().uuidString
+    let text: String
+    let isPush: Bool
+}
+
 struct AccountView: View {
     @EnvironmentObject var profileManager: ProfileManager
+    
+    let settingsMenuItems: [SettingsMenuItem] = [
+        .init(text: "App Settings", isPush: true),
+        .init(text: "Account", isPush: true),
+        .init(text: "Subscription", isPush: true),
+        .init(text: "Privacy & Terms", isPush: true),
+        .init(text: "Help", isPush: false),
+        .init(text: "Sign out", isPush: false)
+    ]
+    
     var body: some View {
         VStack(spacing: 0) {
             ProfileTopBar()
@@ -32,6 +48,53 @@ struct AccountView: View {
             }
             .padding(.top, 25)
             
+            ScrollView {
+                VStack(alignment: .leading) {
+                    ForEach(settingsMenuItems, id: \.id) { item in
+                        Button {
+                            debugPrint("Doing \(item.text)")
+                        } label: {
+                            HStack {
+                                Text(item.text)
+                                    .foregroundStyle(.white)
+                                    .font(.system(size: 16, weight: .bold))
+                                    .padding(12)
+                                
+                                Spacer()
+                                
+                                if item.isPush {
+                                    Image(systemName: "chevron.right")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .foregroundStyle(.white)
+                                        .frame(width: 20, height: 20)
+                                        .padding(12)
+                                }
+                            }
+                        }
+                        
+                        if item.id != settingsMenuItems.last?.id {
+                            Rectangle()
+                                .frame(height: 1)
+                                .foregroundStyle(.white)
+                        }
+                    }
+                }
+                .background(Color("profilesettingscolor"))
+                .clipShape(RoundedRectangle(cornerRadius: 3))
+                .clipped()
+                .padding([.horizontal, .top])
+                
+                HStack {
+                    let version = "2.5.0"
+                    let build = "36"
+                    Text("Version \(version) (\(build))")
+                        .font(.caption)
+                        .foregroundStyle(.gray)
+                        .padding(.horizontal)
+                    Spacer()
+                }
+            }
             
             Spacer()
         }
