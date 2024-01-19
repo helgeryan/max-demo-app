@@ -20,10 +20,12 @@ struct HeaderView: View {
                 .foregroundStyle(.white)
                 .padding()
             Spacer()
-            Image(systemName: "bell")
-                .resizable()
-                .frame(width: 25, height: 25)
-                .foregroundStyle(.white)
+            NavigationLink(value: NavigationType.updates, label: {
+                Image(systemName: "bell")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                    .foregroundStyle(.white)
+            })
             NavigationLink(value: NavigationType.profile, label: {
                 Image("profile")
                     .resizable()

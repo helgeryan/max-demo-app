@@ -61,6 +61,8 @@ struct ContentView: View {
                 switch type {
                 case .profile:
                     AccountView()
+                case .updates:
+                    UpdatesView()
                 default:
                     AccountView()
                 }

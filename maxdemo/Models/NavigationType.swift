@@ -7,6 +7,7 @@
 
 import Foundation
 
-enum NavigationType {
+enum NavigationType: Hashable {
     case profile
+    case updates
 }
