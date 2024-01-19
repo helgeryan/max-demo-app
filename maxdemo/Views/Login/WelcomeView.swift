@@ -10,7 +10,7 @@ import SwiftUI
 struct WelcomeView: View {
     @EnvironmentObject var profileManager: ProfileManager
     var body: some View {
-         let content = VStack(spacing: 0) {
+        let content = VStack(spacing: 0) {
                 Spacer()
                 Image("max")
                     .renderingMode(.template)
@@ -74,8 +74,8 @@ struct WelcomeView: View {
         .background(content: {
             Image("welcome")
                 .resizable()
-                .scaledToFill()
                 .ignoresSafeArea()
+                .scaledToFill()
                 .overlay(.black.opacity(0.2))
         })
         
