@@ -14,6 +14,7 @@ struct DownloadsView: View {
         VStack(spacing: 0) {
             DownloadHeaderView()
             
+            let buttonHeight: CGFloat = 34
             HStack {
                 Button {
                     debugPrint("Editting profiles")
@@ -21,17 +22,13 @@ struct DownloadsView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 8)
                             .foregroundStyle(Color("editcolor"))
-                            .frame(width: 40, height: 40)
+                            .frame(width: buttonHeight, height: buttonHeight)
                         Image(systemName: "gear")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 22, height: 22)
+                            .frame(width: 16, height: 16)
                             .foregroundStyle(.white)
                     }
-                    .background(Color("editcolor"))
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .clipped()
-                    .frame(width: 40, height: 40)
                 }
                 Spacer()
                 
@@ -41,7 +38,7 @@ struct DownloadsView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 8)
                             .foregroundStyle(Color("editcolor"))
-                            .frame(width: 160, height: 40)
+                            .frame(width: 130, height: buttonHeight)
                         Text("Edit")
                             .foregroundStyle(.white)
                             .font(.system(size: 16, weight: .bold))
@@ -69,8 +66,8 @@ struct DownloadsView: View {
                             .padding([.horizontal,.top])
                     }
                 }
-                
             }
+            .padding(.top, 5)
             
             
             Spacer()
