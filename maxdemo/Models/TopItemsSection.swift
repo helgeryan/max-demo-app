@@ -12,7 +12,7 @@ struct TopItemsSection {
     let items: [TopItem]
 }
 
-struct TopItem {
+struct TopItem: Hashable {
     let index: Int
     let item: MediaItem
 }

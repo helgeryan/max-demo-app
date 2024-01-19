@@ -19,7 +19,6 @@ struct CarouselCardView: View {
                 .scaledToFill()
                 .frame(width: .fullScreenWidth, height: 500)
                 .clipped()
-                .opacity(currentIndex == carouselItem.index ? 1 : 0)
             LinearGradient(gradient: Gradient(colors: [.black.opacity(0), .black.opacity(1)]), startPoint: .top, endPoint: .bottom)
     
             VStack {

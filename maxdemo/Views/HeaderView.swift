@@ -24,11 +24,13 @@ struct HeaderView: View {
                 .resizable()
                 .frame(width: 25, height: 25)
                 .foregroundStyle(.white)
-            Image(systemName: "person.fill")
-                .resizable()
-                .foregroundStyle(.gray)
-                .frame(width: 25, height: 25)
-                .padding()
+            NavigationLink(value: NavigationType.profile, label: {
+                Image("profile")
+                    .resizable()
+                    .foregroundStyle(.gray)
+                    .frame(width: 25, height: 25)
+                    .padding()
+            })
         }
         .background(.black.opacity(opacity))
     }

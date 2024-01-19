@@ -38,6 +38,8 @@ struct MediaItemView: View {
                 Spacer()
             }
         }
+        .background(
+            LinearGradient(colors: [.black, .black, .black, Color("darkblue")], startPoint: .top, endPoint: .bottom))
         .navigationBarBackButtonHidden(true)
     }
 }

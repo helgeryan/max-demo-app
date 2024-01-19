@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct maxdemoApp: App {
     @StateObject var mediaManager: MediaManager = .init()
+    @StateObject var profileManager: ProfileManager = .init()
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(mediaManager)
+                .environmentObject(profileManager)
         }
     }
 }

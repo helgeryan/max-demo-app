@@ -54,6 +54,17 @@ struct ContentView: View {
             .navigationDestination(for: MediaItem.self, destination: { item in
                 MediaItemView(mediaItem: item)
             })
+            .navigationDestination(for: TopItem.self, destination: { item in
+                MediaItemView(mediaItem: item.item)
+            })
+            .navigationDestination(for: NavigationType.self, destination: { type in
+                switch type {
+                case .profile:
+                    AccountView()
+                default:
+                    AccountView()
+                }
+            })
         }
     }
 }

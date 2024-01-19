@@ -21,8 +21,10 @@ struct TopItemsSectionView: View {
             ScrollView(.horizontal) {
                 HStack(spacing: 0) {
                     ForEach(section.items, id: \.index) { item in
-                        TopItemRowView(topItem: item)
-                            .padding(.leading)
+                        NavigationLink(value: item, label: {
+                            TopItemRowView(topItem: item)
+                                .padding(.leading)
+                        })
                     }
                     Spacer()
                 }
