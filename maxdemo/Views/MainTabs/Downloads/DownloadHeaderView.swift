@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DownloadHeaderView: View {
+    @State var isProfilePresented: Bool = false
     var opacity: CGFloat = 1
     var body: some View {
         HStack(spacing: 0) {
@@ -17,13 +18,16 @@ struct DownloadHeaderView: View {
                 .padding()
             Spacer()
             
-            NavigationLink(value: NavigationType.profile, label: {
+            Button {
+                isProfilePresented = true
+            } label: {
                 Image("profile")
                     .resizable()
                     .foregroundStyle(.gray)
                     .frame(width: 25, height: 25)
                     .padding()
-            })
+            }
+            .fullScreenCover(isPresented: $isProfilePresented, content: AccountView.init)
         }
         .background(.black.opacity(opacity))
     }

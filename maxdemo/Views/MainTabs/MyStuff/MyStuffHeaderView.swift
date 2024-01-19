@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MyStuffHeaderView: View {
+    @State var isProfilePresented: Bool = false
+    @State var isUpdatesPresented: Bool = false
     var opacity: CGFloat = 1
     var body: some View {
         HStack(spacing: 0) {
@@ -16,19 +18,27 @@ struct MyStuffHeaderView: View {
                 .font(.system(size: 20, weight: .bold))
                 .padding()
             Spacer()
-            NavigationLink(value: NavigationType.updates, label: {
+            
+            Button {
+                isUpdatesPresented = true
+            } label: {
                 Image(systemName: "bell")
                     .resizable()
                     .frame(width: 25, height: 25)
                     .foregroundStyle(.white)
-            })
-            NavigationLink(value: NavigationType.profile, label: {
+            }
+            .fullScreenCover(isPresented: $isUpdatesPresented, content: UpdatesView.init)
+            
+            Button {
+                isProfilePresented = true
+            } label: {
                 Image("profile")
                     .resizable()
                     .foregroundStyle(.gray)
                     .frame(width: 25, height: 25)
                     .padding()
-            })
+            }
+            .fullScreenCover(isPresented: $isProfilePresented, content: AccountView.init)
         }
         .background(.black.opacity(opacity))
     }
