@@ -24,8 +24,14 @@ struct ContentView: View {
         UINavigationBar.appearance().compactScrollEdgeAppearance = navAppearance
     }
     
+    @EnvironmentObject var profileManager: ProfileManager
+    
     var body: some View {
-       MainTabView()
+        if profileManager.account == nil {
+            WelcomeView()
+        } else {
+            MainTabView()
+        }
     }
 }
 

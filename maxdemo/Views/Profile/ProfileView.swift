@@ -15,6 +15,7 @@ struct SettingsMenuItem {
 
 struct AccountView: View {
     @EnvironmentObject var profileManager: ProfileManager
+    @Environment(\.dismiss) var dismiss
     
     let settingsMenuItems: [SettingsMenuItem] = [
         .init(text: "App Settings", isPush: true),
@@ -29,9 +30,10 @@ struct AccountView: View {
         VStack(spacing: 0) {
             ProfileTopBar()
                 .padding(.horizontal)
-            
-            ProfilesListView(account: profileManager.account)
-                .padding(.top)
+            if let account = profileManager.account {
+                ProfilesListView(account: account)
+                    .padding(.top)
+            }
             
             Button {
                 debugPrint("Editting profiles")
@@ -53,6 +55,8 @@ struct AccountView: View {
                     ForEach(settingsMenuItems, id: \.id) { item in
                         Button {
                             debugPrint("Doing \(item.text)")
+                            dismiss()
+                            profileManager.signOut()
                         } label: {
                             HStack {
                                 Text(item.text)

@@ -51,6 +51,7 @@
 		E665C7EF2B5AC65100CD046B /* SearchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7EE2B5AC65100CD046B /* SearchRowView.swift */; };
 		E665C7F12B5AC9A200CD046B /* UpdateRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F02B5AC9A200CD046B /* UpdateRowView.swift */; };
 		E665C7F32B5AC9B700CD046B /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F22B5AC9B700CD046B /* Update.swift */; };
+		E665C7F62B5ACDAF00CD046B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F52B5ACDAF00CD046B /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		E665C7EE2B5AC65100CD046B /* SearchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRowView.swift; sourceTree = "<group>"; };
 		E665C7F02B5AC9A200CD046B /* UpdateRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRowView.swift; sourceTree = "<group>"; };
 		E665C7F22B5AC9B700CD046B /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		E665C7F52B5ACDAF00CD046B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		E665C7952B59990B00CD046B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E665C7F42B5ACD8900CD046B /* Login */,
 				E665C7C62B5A035300CD046B /* MainTabs */,
 				E665C7C32B59F9A600CD046B /* Updates */,
 				E665C7BB2B59E9BC00CD046B /* Profile */,
@@ -291,6 +294,14 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		E665C7F42B5ACD8900CD046B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E665C7F52B5ACDAF00CD046B /* WelcomeView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -362,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E665C7F12B5AC9A200CD046B /* UpdateRowView.swift in Sources */,
+				E665C7F62B5ACDAF00CD046B /* WelcomeView.swift in Sources */,
 				E665C7AC2B59A76500CD046B /* MediaManager.swift in Sources */,
 				E665C78A2B5995B500CD046B /* ContentView.swift in Sources */,
 				E665C7E22B5A280500CD046B /* DownloadsView.swift in Sources */,
