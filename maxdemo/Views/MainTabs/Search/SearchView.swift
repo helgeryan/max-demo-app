@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SearchView: View {
+    @EnvironmentObject var mediaManager: MediaManager
     @State var searchText: String = ""
     @State var isTextFieldFocused: Bool = false
     @FocusState var focusState: Bool
@@ -30,7 +31,7 @@ struct SearchView: View {
                     Spacer()
                 }
                 .padding()
-                .background(Color("editcolor"))
+                .background(isTextFieldFocused ? Color("focuscolor") : Color("editcolor"))
                 .clipShape(RoundedRectangle(cornerRadius: 4))
                 .clipped()
                 .onTapGesture {
@@ -42,9 +43,29 @@ struct SearchView: View {
             }
             .padding()
             
+            ScrollView {
+                if !searchText.isEmpty {
+                    VStack {
+                        ForEach(mediaManager.getSearchResults(queryText: searchText), id: \.self) { item in
+                            SearchRowView(mediaItem: item)
+                                .padding([.top, .horizontal])
+                        }
+                    }
+                } else {
+                    HomeSectionView(section: mediaManager.getRecommendedForYou())
+                }
+            }
+            
             Spacer()
         }
+        .onTapGesture {
+            endEditing()
+        }
         .modifier(GradientBackground())
+    }
+    
+    private func endEditing() {
+        UIApplication.shared.endEditing()
     }
 }
 

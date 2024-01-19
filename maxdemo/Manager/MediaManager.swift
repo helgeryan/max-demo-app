@@ -42,4 +42,9 @@ class MediaManager: ObservableObject {
     func getMyList() -> [MediaItem] {
         return [ items[0] ]
     }
+    
+    func getSearchResults(queryText: String) -> [MediaItem] {
+        return items.filter({ return $0.title.lowercased().contains(queryText.lowercased()) })
+        
+    }
 }

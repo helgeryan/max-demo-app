@@ -47,6 +47,8 @@
 		E665C7E62B5A2C4300CD046B /* DownloadItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7E52B5A2C4300CD046B /* DownloadItemRowView.swift */; };
 		E665C7E92B5A2FB900CD046B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7E82B5A2FB900CD046B /* SearchView.swift */; };
 		E665C7EB2B5A342100CD046B /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7EA2B5A342100CD046B /* View+Extensions.swift */; };
+		E665C7ED2B5AC4ED00CD046B /* UIApplication+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7EC2B5AC4ED00CD046B /* UIApplication+extensions.swift */; };
+		E665C7EF2B5AC65100CD046B /* SearchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7EE2B5AC65100CD046B /* SearchRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +93,8 @@
 		E665C7E52B5A2C4300CD046B /* DownloadItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadItemRowView.swift; sourceTree = "<group>"; };
 		E665C7E82B5A2FB900CD046B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E665C7EA2B5A342100CD046B /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		E665C7EC2B5AC4ED00CD046B /* UIApplication+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+extensions.swift"; sourceTree = "<group>"; };
+		E665C7EE2B5AC65100CD046B /* SearchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,7 @@
 				E665C7A12B59A0FF00CD046B /* CGFloat+Extensions.swift */,
 				E665C7DE2B5A279D00CD046B /* GradientBackground.swift */,
 				E665C7EA2B5A342100CD046B /* View+Extensions.swift */,
+				E665C7EC2B5AC4ED00CD046B /* UIApplication+extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				E665C7E82B5A2FB900CD046B /* SearchView.swift */,
+				E665C7EE2B5AC65100CD046B /* SearchRowView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -364,6 +370,7 @@
 				E665C7992B59993600CD046B /* CarouselView.swift in Sources */,
 				E665C7B02B59AB5F00CD046B /* ContinueWatchingMediaItemColumnView.swift in Sources */,
 				E665C7C52B59F9B300CD046B /* UpdatesView.swift in Sources */,
+				E665C7EF2B5AC65100CD046B /* SearchRowView.swift in Sources */,
 				E665C7B42B59B4CE00CD046B /* TopItemsSection.swift in Sources */,
 				E665C7DB2B5A275100CD046B /* MyStuffOptionsView.swift in Sources */,
 				E665C7CA2B5A038300CD046B /* MainTabView.swift in Sources */,
@@ -371,6 +378,7 @@
 				E665C7C02B59EA5D00CD046B /* ProfileManager.swift in Sources */,
 				E665C7CE2B5A054700CD046B /* MyStuffView.swift in Sources */,
 				E665C7D12B5A16A100CD046B /* MyListView.swift in Sources */,
+				E665C7ED2B5AC4ED00CD046B /* UIApplication+extensions.swift in Sources */,
 				E665C7E62B5A2C4300CD046B /* DownloadItemRowView.swift in Sources */,
 				E665C7E92B5A2FB900CD046B /* SearchView.swift in Sources */,
 				E665C7D82B5A19B000CD046B /* ContinueWatchingMediaItemRowView.swift in Sources */,
