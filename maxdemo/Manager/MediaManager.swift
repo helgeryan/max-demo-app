@@ -21,6 +21,9 @@ class MediaManager: ObservableObject {
         .init(title: "Mad Max", imageName: "madmax", shortDescription: "Mad Max is an Australian post-apocalyptic and dystopian action film series and media franchise created by George Miller and Byron Kennedy.", secondaryImage: "madmax2", tvRating: "R", mediaType: .movie, link: "https://play.max.com/movie/8cde025a-223d-4879-9336-3d5f6c9d0c55")
     ]
     
+    
+    @Published var myListItems: [MediaItem] = []
+    
     func getCarousel() -> [CarouselItem] {
         return items.filter({ return !$0.secondaryImage.isEmpty}).enumerated().map({ return .init(media: $1, index: $0)})
     }
@@ -33,6 +36,10 @@ class MediaManager: ObservableObject {
         return HomeSection(title: "Continue Watching", items: items, type: .watching)
     }
     
+    func getMyListSection() -> HomeSection {
+        return HomeSection(title: "My List", items: myListItems, type: .general)
+    }
+    
     func getTopSeries() -> TopItemsSection {
         let topItems: [TopItem] = items.filter({ return $0.mediaType == .series}).enumerated().map({ return .init(index: $0, item: $1) })
         return .init(type: .series, items: Array(topItems.prefix(10)))
@@ -41,11 +48,6 @@ class MediaManager: ObservableObject {
     func getTopMovies() -> TopItemsSection {
         let topItems: [TopItem] = items.filter({ return $0.mediaType == .movie }).enumerated().map({ return .init(index: $0, item: $1) })
         return .init(type: .movie, items: Array(topItems.prefix(10)))
-    }
-    
-    
-    func getMyList() -> [MediaItem] {
-        return [ items[0] ]
     }
     
     func getSearchResults(queryText: String) -> [MediaItem] {

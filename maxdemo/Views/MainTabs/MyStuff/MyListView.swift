@@ -11,7 +11,7 @@ struct MyListView: View {
     @EnvironmentObject var mediaManager: MediaManager
     var body: some View {
         VStack {
-            ForEach(mediaManager.getMyList(), id: \.self) { item in
+            ForEach(mediaManager.myListItems, id: \.self) { item in
                 MediaItemRowView(mediaItem: item)
                     .padding()
             }

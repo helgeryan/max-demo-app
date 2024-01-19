@@ -28,6 +28,10 @@ struct HomeView: View {
                     
                     HomeSectionView(section: mediaManager.getContinueWatching())
                     
+                    if !mediaManager.myListItems.isEmpty {
+                        HomeSectionView(section: mediaManager.getMyListSection())
+                    }
+                    
                     TopItemsSectionView(section: mediaManager.getTopSeries())
                     
                     TopItemsSectionView(section: mediaManager.getTopMovies())

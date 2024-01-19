@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MediaItemView: View {
+    @EnvironmentObject var mediaManager: MediaManager
     @Environment(\.dismiss) var dismiss
     @State var isSharePresented: Bool = false
     @State var barOpacity: CGFloat = 0
@@ -42,8 +43,14 @@ struct MediaItemView: View {
                     .padding(.horizontal)
                     
                     HStack {
-                        MediaActionButton(text: "My List", systemImage: "plus", action: {
-                            
+                        let isFaved = mediaManager.myListItems.contains(mediaItem)
+                        let image = isFaved ? "checkmark" : "plus"
+                        MediaActionButton(text: "My List", systemImage: image, action: {
+                            if isFaved {
+                                mediaManager.myListItems = mediaManager.myListItems.filter({ return mediaItem != $0 })
+                            } else {
+                                mediaManager.myListItems.append(mediaItem)
+                            }
                         })
                         .padding()
                         MediaActionButton(text: "Trailer", systemImage: "movieclapper", action: {
