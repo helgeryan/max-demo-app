@@ -99,8 +99,7 @@ struct AccountView: View {
             Spacer()
         }
         .navigationBarBackButtonHidden(true)
-        .background(
-            LinearGradient(colors: [.black, .black, .black, Color("darkblue")], startPoint: .top, endPoint: .bottom))
+        .modifier(GradientBackground())
         
     }
 }

@@ -38,4 +38,8 @@ class MediaManager: ObservableObject {
         return .init(type: .movie, items: topItems)
     }
     
+    
+    func getMyList() -> [MediaItem] {
+        return [ items[0] ]
+    }
 }

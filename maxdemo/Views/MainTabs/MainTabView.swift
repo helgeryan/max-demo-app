@@ -21,7 +21,7 @@ struct MainTabView: View {
                 })
                 .tag(0)
             
-            HomeView()
+                MaxNavigationView(content: AnyView(DownloadsView()))
                 .tabItem({
                     VStack {
                         Spacer()

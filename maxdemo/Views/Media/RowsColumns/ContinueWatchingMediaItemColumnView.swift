@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContinueWatchingMediaItemView: View {
+struct ContinueWatchingMediaItemColumnView: View {
     var mediaItem: MediaItem
     var width: CGFloat = 250
     var height: CGFloat = 130
@@ -63,6 +63,4 @@ struct ContinueWatchingMediaItemView: View {
             
         }
     }
-    
-    
 }

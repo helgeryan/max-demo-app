@@ -25,8 +25,6 @@ struct MaxNavigationView: View {
                         AccountView()
                     case .updates:
                         UpdatesView()
-                    default:
-                        AccountView()
                     }
                 })
             

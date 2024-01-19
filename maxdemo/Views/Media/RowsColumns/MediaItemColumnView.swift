@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MediaItemRowView: View {
+struct MediaItemColumnView: View {
     var mediaItem: MediaItem
     var width: CGFloat = 120
     var height: CGFloat = 200
@@ -43,5 +43,5 @@ struct MediaItemRowView: View {
 }
 
 #Preview {
-    MediaItemRowView(mediaItem: MediaItem(title: "Peacemaker", imageName: "peacemaker", shortDescription: "Peacemaker is an American superhero television series created by James Gunn for the streaming service HBO Max, based on the DC Comics character Peacemaker", secondaryImage: "peacemaker2"))
+    MediaItemColumnView(mediaItem: MediaItem(title: "Peacemaker", imageName: "peacemaker", shortDescription: "Peacemaker is an American superhero television series created by James Gunn for the streaming service HBO Max, based on the DC Comics character Peacemaker", secondaryImage: "peacemaker2"))
 }

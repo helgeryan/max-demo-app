@@ -36,9 +36,7 @@ struct HomeView: View {
                 }
             }
             .ignoresSafeArea(edges: .top)
-            .background(
-                LinearGradient(colors: [.black, .black, .black, Color("darkblue")], startPoint: .top, endPoint: .bottom))
-            
+            .modifier(GradientBackground())
             
             VStack {
                 HeaderView(opacity: $barOpacity)

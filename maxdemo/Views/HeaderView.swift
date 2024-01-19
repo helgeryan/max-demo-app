@@ -16,7 +16,7 @@ struct HeaderView: View {
                 .renderingMode(.template)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 100, height: 20)
+                .frame(height: 20)
                 .foregroundStyle(.white)
                 .padding()
             Spacer()

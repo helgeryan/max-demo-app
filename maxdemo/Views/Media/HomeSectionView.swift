@@ -27,10 +27,10 @@ struct HomeSectionView: View {
                             switch section.type {
                             case .general:
                                 
-                                MediaItemRowView(mediaItem: item)
+                                MediaItemColumnView(mediaItem: item)
                                     .padding(.leading)
                             case .watching:
-                                ContinueWatchingMediaItemView(mediaItem: item)
+                                ContinueWatchingMediaItemColumnView(mediaItem: item)
                                     .padding(.leading)
                             }
                         })
