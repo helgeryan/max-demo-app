@@ -53,6 +53,7 @@
 		E665C7F32B5AC9B700CD046B /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F22B5AC9B700CD046B /* Update.swift */; };
 		E665C7F62B5ACDAF00CD046B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F52B5ACDAF00CD046B /* WelcomeView.swift */; };
 		E665C7F82B5AD97200CD046B /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F72B5AD97200CD046B /* PrivacyView.swift */; };
+		E665C7FA2B5AEE7800CD046B /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F92B5AEE7800CD046B /* ActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,7 @@
 		E665C7F22B5AC9B700CD046B /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		E665C7F52B5ACDAF00CD046B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		E665C7F72B5AD97200CD046B /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		E665C7F92B5AEE7800CD046B /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				E665C7DE2B5A279D00CD046B /* GradientBackground.swift */,
 				E665C7EA2B5A342100CD046B /* View+Extensions.swift */,
 				E665C7EC2B5AC4ED00CD046B /* UIApplication+extensions.swift */,
+				E665C7F92B5AEE7800CD046B /* ActivityViewController.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				E665C7A42B59A40300CD046B /* HomeSectionView.swift in Sources */,
 				E665C7B62B59B53E00CD046B /* TopItemRowView.swift in Sources */,
 				E665C7972B59991800CD046B /* HeaderView.swift in Sources */,
+				E665C7FA2B5AEE7800CD046B /* ActivityViewController.swift in Sources */,
 				E665C79E2B5999B500CD046B /* CarouselCardView.swift in Sources */,
 				E665C7992B59993600CD046B /* CarouselView.swift in Sources */,
 				E665C7B02B59AB5F00CD046B /* ContinueWatchingMediaItemColumnView.swift in Sources */,

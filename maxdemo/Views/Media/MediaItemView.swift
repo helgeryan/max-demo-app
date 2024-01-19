@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MediaItemView: View {
     @Environment(\.dismiss) var dismiss
+    @State var isSharePresented: Bool = false
     @State var barOpacity: CGFloat = 0
     var mediaItem: MediaItem
     
@@ -25,8 +26,57 @@ struct MediaItemView: View {
                 }
                 .frame(height: 500)
                 
-                VStack {
+                VStack(alignment: .leading, spacing: 0) {
+                    Button {
+                        debugPrint("Doing play")
+                    } label: {
+                        Label("Watch Now", systemImage: "play.fill")
+                            .foregroundStyle(.black)
+                            .font(.system(size: 15, weight: .bold))
+                            .padding(.vertical)
+                            .frame(maxWidth: .infinity)
+                            .background(.white)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .clipped()
+                    }
+                    .padding(.horizontal)
                     
+                    HStack {
+                        MediaActionButton(text: "My List", systemImage: "plus", action: {
+                            
+                        })
+                        .padding()
+                        MediaActionButton(text: "Trailer", systemImage: "movieclapper", action: {
+                            
+                        })
+                        .padding()
+                        MediaActionButton(text: "Share", systemImage: "square.and.arrow.up", action: {
+                            isSharePresented = true
+                        })
+                        .sheet(isPresented: $isSharePresented, content: {
+                            ActivityViewController(activityItems: [URL(string: mediaItem.link)!])
+                                .presentationDetents([.height(300)])
+                        })
+                        .padding()
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    
+                    Text(mediaItem.shortDescription)
+                        .foregroundStyle(.white)
+                        .multilineTextAlignment(.leading)
+                        .font(.system(size: 13, weight: .regular))
+                        .padding(.horizontal)
+                    
+
+                    HStack {
+                        Text(mediaItem.tvRating)
+                            .foregroundStyle(.gray)
+                            .multilineTextAlignment(.leading)
+                            .font(.system(size: 11, weight: .regular))
+                            .padding(.horizontal)
+                        Spacer()
+                    }
                 }
             }
             .ignoresSafeArea(edges: .top)
@@ -62,13 +112,6 @@ struct MediaHeaderView: View {
                     .scaledToFit()
                     .frame(height: 100)
                     .padding(.bottom)
-                
-                Text(item.shortDescription)
-                    .foregroundStyle(.white)
-                    .multilineTextAlignment(.leading)
-                    .font(.caption)
-                    .padding(.bottom, 40)
-                    .padding(.horizontal)
             }
         }
     }
@@ -106,5 +149,28 @@ struct MediaItemTopBar: View {
             }
         }
         .background(.black.opacity(opacity))
+    }
+}
+
+struct MediaActionButton: View {
+    let text: String
+    let systemImage: String
+    let action: () -> (Void)
+    var body: some View {
+        Button {
+            action()
+        } label: {
+            VStack(spacing: 0) {
+                Image(systemName: systemImage)
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundStyle(.white)
+                    .frame(width: 22, height: 22)
+                Text(text)
+                    .padding(.top, 3)
+                    .foregroundStyle(.white)
+                    .font(.system(size: 11, weight: .regular))
+            }
+        }
     }
 }
