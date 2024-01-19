@@ -11,22 +11,24 @@ struct SettingsMenuItem {
     let id: String = UUID().uuidString
     let text: String
     let isPush: Bool
+    let action: () -> ()
 }
 
 struct AccountView: View {
     @EnvironmentObject var profileManager: ProfileManager
     @Environment(\.dismiss) var dismiss
-    
-    let settingsMenuItems: [SettingsMenuItem] = [
-        .init(text: "App Settings", isPush: true),
-        .init(text: "Account", isPush: true),
-        .init(text: "Subscription", isPush: true),
-        .init(text: "Privacy & Terms", isPush: true),
-        .init(text: "Help", isPush: false),
-        .init(text: "Sign out", isPush: false)
-    ]
-    
+
     var body: some View {
+        let settingsMenuItems: [SettingsMenuItem] = [
+            .init(text: "App Settings", isPush: true, action: { }),
+            .init(text: "Account", isPush: true, action: { }),
+            .init(text: "Subscription", isPush: true, action: { }),
+            .init(text: "Privacy & Terms", isPush: true, action: { }),
+            .init(text: "Help", isPush: false, action: { }),
+            .init(text: "Sign out", isPush: false, action: {
+                    profileManager.signOut()
+            })
+        ]
         VStack(spacing: 0) {
             ProfileTopBar()
                 .padding(.horizontal)
@@ -53,28 +55,7 @@ struct AccountView: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     ForEach(settingsMenuItems, id: \.id) { item in
-                        Button {
-                            debugPrint("Doing \(item.text)")
-                            profileManager.signOut()
-                        } label: {
-                            HStack {
-                                Text(item.text)
-                                    .foregroundStyle(.white)
-                                    .font(.system(size: 16, weight: .bold))
-                                    .padding(12)
-                                
-                                Spacer()
-                                
-                                if item.isPush {
-                                    Image(systemName: "chevron.right")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .foregroundStyle(.white)
-                                        .frame(width: 20, height: 20)
-                                        .padding(12)
-                                }
-                            }
-                        }
+                        SettingMenuRow(item: item)
                         
                         if item.id != settingsMenuItems.last?.id {
                             Rectangle()
@@ -106,7 +87,35 @@ struct AccountView: View {
         
     }
 }
- 
+
+struct SettingMenuRow: View {
+    let item: SettingsMenuItem
+    
+    var body: some View {
+        Button {
+            item.action()
+        } label: {
+            HStack {
+                Text(item.text)
+                    .foregroundStyle(.white)
+                    .font(.system(size: 16, weight: .bold))
+                    .padding(12)
+                
+                Spacer()
+                
+                if item.isPush {
+                    Image(systemName: "chevron.right")
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundStyle(.white)
+                        .frame(width: 20, height: 20)
+                        .padding(12)
+                }
+            }
+        }
+    }
+}
+
 struct ProfilesListView: View {
     let account: Account
     

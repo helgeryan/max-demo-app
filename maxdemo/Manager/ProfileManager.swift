@@ -10,16 +10,17 @@ import Foundation
 
 class ProfileManager: ObservableObject {
     @Published var account: Account? = nil
-    @Published var selectedProfile: Profile = .init(name: "Taryn", profileImage: nil)
+    @Published var selectedProfile: Profile? = nil
     
     func signIn() {
-        account = Account(
-            profiles: [
-                .init(name: "Taryn", profileImage: nil),
-                .init(name: "Mom", profileImage: nil),
-                .init(name: "Ryan", profileImage: nil),
-                .init(name: "Jord", profileImage: nil)
-            ])
+        let profiles: [Profile] = [
+            .init(name: "Ryan", profileImage: nil),
+            .init(name: "John", profileImage: nil),
+            .init(name: "Jim", profileImage: nil),
+            .init(name: "Jack", profileImage: nil)
+        ]
+        account = Account(profiles:profiles)
+        selectedProfile = profiles[0]
     }
     
     func signOut() {

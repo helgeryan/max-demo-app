@@ -54,7 +54,7 @@ struct DownloadsView: View {
                             .resizable()
                             .foregroundStyle(.gray)
                             .frame(width: 25, height: 25)
-                        Text(profileManager.selectedProfile.name)
+                        Text(profileManager.selectedProfile?.name ?? "No profile selected")
                             .foregroundStyle(.white)
                             .font(.system(size: 14, weight: .bold))
                         Spacer()

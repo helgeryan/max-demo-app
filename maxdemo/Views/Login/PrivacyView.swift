@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct PrivacyView: View {
-    let settingsMenuItems: [SettingsMenuItem] = [
-        .init(text: "Privacy Policy", isPush: false),
-        .init(text: "Terms of Use", isPush: false),
-        .init(text: "Ad Choices", isPush: false)
-    ]
+
     var body: some View {
+        let settingsMenuItems: [SettingsMenuItem] = [
+            .init(text: "Privacy Policy", isPush: false, action: {
+                
+            }),
+            .init(text: "Terms of Use", isPush: false, action: {
+                
+            }),
+            .init(text: "Ad Choices", isPush: false, action: {
+                
+            }),
+        ]
         VStack {
             ScrollView {
                 VStack(alignment: .leading) {
