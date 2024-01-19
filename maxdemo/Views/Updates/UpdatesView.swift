@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct UpdatesView: View {
+    @EnvironmentObject var mediaManager: MediaManager
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
             UpdatesTopBar(title: "Updates", dismissAction: { dismiss() })
+            
+            ScrollView {
+                VStack {
+                    ForEach(mediaManager.getUpdates(), id: \.self) { update in
+                        UpdateRowView(update: update)
+                            .padding([.top, .horizontal])
+                    }
+                }
+            }
+            
             Spacer()
         }
-        .background(.black)
+        .modifier(GradientBackground())
         .navigationBarBackButtonHidden(true)
     }
 }
@@ -28,7 +39,7 @@ struct UpdatesTopBar: View {
             HStack {
                 Spacer()
                 Text(title)
-                    .font(.system(size: 14, weight: .bold))
+                    .font(.system(size: 16, weight: .bold))
                     .foregroundStyle(.white)
                 Spacer()
             }

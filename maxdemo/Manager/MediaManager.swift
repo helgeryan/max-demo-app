@@ -47,4 +47,9 @@ class MediaManager: ObservableObject {
         return items.filter({ return $0.title.lowercased().contains(queryText.lowercased()) })
         
     }
+    
+    func getUpdates() -> [Update] {
+        return items.map({ return .init(item: $0, title: "The Story Continues", description: "Don't miss the latest episode!") })
+        
+    }
 }
