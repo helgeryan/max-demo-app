@@ -39,9 +39,8 @@ struct MyStuffOptionsView: View {
                                     .frame(height: 1)
                                     .foregroundStyle(.white)
                                     .opacity(selectedIndex == option.index ? 1 : 0)
-                        }
-                        .frame(width: 160)
-                    }
+                        }.fixedSize()
+                    }.padding(.trailing)
                 }
                 Spacer()
             }
