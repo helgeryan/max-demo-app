@@ -56,6 +56,10 @@
 		E665C7FA2B5AEE7800CD046B /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7F92B5AEE7800CD046B /* ActivityViewController.swift */; };
 		E665C7FC2B5AF48500CD046B /* MediaQuickLookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7FB2B5AF48500CD046B /* MediaQuickLookView.swift */; };
 		E665C7FE2B5AF69C00CD046B /* MediaMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C7FD2B5AF69C00CD046B /* MediaMenuButton.swift */; };
+		E665C8012B5C521600CD046B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8002B5C521600CD046B /* AccountView.swift */; };
+		E665C8042B5C524000CD046B /* SettingMenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8032B5C524000CD046B /* SettingMenuRow.swift */; };
+		E665C8062B5C528100CD046B /* ProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8052B5C528100CD046B /* ProfileListView.swift */; };
+		E665C8082B5C529E00CD046B /* ProfileTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8072B5C529E00CD046B /* ProfileTopBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +113,10 @@
 		E665C7F92B5AEE7800CD046B /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		E665C7FB2B5AF48500CD046B /* MediaQuickLookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaQuickLookView.swift; sourceTree = "<group>"; };
 		E665C7FD2B5AF69C00CD046B /* MediaMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMenuButton.swift; sourceTree = "<group>"; };
+		E665C8002B5C521600CD046B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		E665C8032B5C524000CD046B /* SettingMenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMenuRow.swift; sourceTree = "<group>"; };
+		E665C8052B5C528100CD046B /* ProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListView.swift; sourceTree = "<group>"; };
+		E665C8072B5C529E00CD046B /* ProfileTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTopBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +244,11 @@
 		E665C7BB2B59E9BC00CD046B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E665C8022B5C522F00CD046B /* Settings */,
 				E665C7BC2B59E9CB00CD046B /* ProfileView.swift */,
+				E665C8002B5C521600CD046B /* AccountView.swift */,
+				E665C8052B5C528100CD046B /* ProfileListView.swift */,
+				E665C8072B5C529E00CD046B /* ProfileTopBar.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -312,6 +324,14 @@
 				E665C7F72B5AD97200CD046B /* PrivacyView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		E665C8022B5C522F00CD046B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E665C8032B5C524000CD046B /* SettingMenuRow.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,17 +434,21 @@
 				E665C7ED2B5AC4ED00CD046B /* UIApplication+extensions.swift in Sources */,
 				E665C7E62B5A2C4300CD046B /* DownloadItemRowView.swift in Sources */,
 				E665C7E92B5A2FB900CD046B /* SearchView.swift in Sources */,
+				E665C8062B5C528100CD046B /* ProfileListView.swift in Sources */,
 				E665C7D82B5A19B000CD046B /* ContinueWatchingMediaItemRowView.swift in Sources */,
 				E665C7882B5995B500CD046B /* maxdemoApp.swift in Sources */,
 				E665C7A72B59A47000CD046B /* MediaItemColumnView.swift in Sources */,
 				E665C7FC2B5AF48500CD046B /* MediaQuickLookView.swift in Sources */,
 				E665C7F32B5AC9B700CD046B /* Update.swift in Sources */,
 				E665C7D62B5A180300CD046B /* MediaItemRowView.swift in Sources */,
+				E665C8012B5C521600CD046B /* AccountView.swift in Sources */,
 				E665C7B22B59B4AB00CD046B /* TopItemsSectionView.swift in Sources */,
 				E665C7A92B59A4AF00CD046B /* CarouselItem.swift in Sources */,
 				E665C7EB2B5A342100CD046B /* View+Extensions.swift in Sources */,
 				E665C7A22B59A0FF00CD046B /* CGFloat+Extensions.swift in Sources */,
+				E665C8042B5C524000CD046B /* SettingMenuRow.swift in Sources */,
 				E665C7F82B5AD97200CD046B /* PrivacyView.swift in Sources */,
+				E665C8082B5C529E00CD046B /* ProfileTopBar.swift in Sources */,
 				E665C7BD2B59E9CB00CD046B /* ProfileView.swift in Sources */,
 				E665C7B82B59C72C00CD046B /* MediaItemView.swift in Sources */,
 				E665C7BA2B59E99F00CD046B /* NavigationType.swift in Sources */,
