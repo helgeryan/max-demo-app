@@ -14,18 +14,19 @@ struct AccountView: View {
 
     var body: some View {
         let settingsMenuItems: [SettingsMenuItem] = [
-            .init(text: "App Settings", isPush: true, action: { }),
-            .init(text: "Account", isPush: true, action: { }),
-            .init(text: "Subscription", isPush: true, action: { }),
-            .init(text: "Privacy & Terms", isPush: true, action: { }),
-            .init(text: "Help", isPush: false, action: { }),
-            .init(text: "Sign out", isPush: false, action: {
+            .init(text: "App Settings", action: { }),
+            .init(text: "Account", navigationType: .accountDetails),
+            .init(text: "Subscription", action: { }),
+            .init(text: "Privacy & Terms", action: { }),
+            .init(text: "Help", action: { }),
+            .init(text: "Sign out", action: {
                 withAnimation {
                     isAreYouSurePresented = true
                 }
             })
         ]
-        ZStack {
+        
+        let content = ZStack {
             VStack(spacing: 0) {
                 ProfileTopBar()
                     .padding(.horizontal)
@@ -92,5 +93,7 @@ struct AccountView: View {
         }
         .navigationBarBackButtonHidden(true)
         .modifier(GradientBackground())
+        
+        MaxNavigationView(content: AnyView(content))
     }
 }

@@ -10,26 +10,33 @@ import SwiftUI
 struct SettingsMenuItem {
     let id: String = UUID().uuidString
     let text: String
-    let isPush: Bool
-    let action: () -> ()
+    var navigationType: NavigationType?  = nil
+    var action: (() -> ())? = nil
 }
 
 struct SettingMenuRow: View {
     let item: SettingsMenuItem
     
     var body: some View {
-        Button {
-            item.action()
-        } label: {
-            HStack {
-                Text(item.text)
-                    .foregroundStyle(.white)
-                    .font(.system(size: 16, weight: .bold))
-                    .padding(12)
-                
-                Spacer()
-                
-                if item.isPush {
+        let textContent = Text(item.text)
+            .foregroundStyle(.white)
+            .font(.system(size: 16, weight: .bold))
+            .padding(12)
+        if let action = item.action {
+            Button {
+                action()
+            } label: {
+                HStack {
+                    textContent
+                    Spacer()
+                }
+            }
+        } else if let type = item.navigationType {
+            NavigationLink(value: type, label: {
+                HStack {
+                    textContent
+                    
+                    Spacer()
                     Image(systemName: "chevron.right")
                         .resizable()
                         .scaledToFit()
@@ -37,7 +44,8 @@ struct SettingMenuRow: View {
                         .frame(width: 20, height: 20)
                         .padding(12)
                 }
-            }
+            })
         }
+        
     }
 }

@@ -8,6 +8,9 @@
 import Foundation
 
 struct Account {
+    let name: String = "Ryan Helgeson"
+    let email: String = "rh@gmail.com"
+    let password: String = "123456789"
     var profiles: [Profile]
 }
 

@@ -63,6 +63,9 @@
 		E665C80A2B5C532100CD046B /* SignOutAreYouSureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8092B5C532100CD046B /* SignOutAreYouSureView.swift */; };
 		E665C80F2B5ECF6000CD046B /* Color+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C80E2B5ECF6000CD046B /* Color+extensions.swift */; };
 		E665C8122B5ED2B800CD046B /* FlexButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8112B5ED2B800CD046B /* FlexButton.swift */; };
+		E665C8142B5ED6C100CD046B /* AccountDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8132B5ED6C100CD046B /* AccountDetailsView.swift */; };
+		E665C8162B5EDADA00CD046B /* MaxEditTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8152B5EDAD900CD046B /* MaxEditTextField.swift */; };
+		E665C8182B5EDFEC00CD046B /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8172B5EDFEC00CD046B /* DevicesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +126,9 @@
 		E665C8092B5C532100CD046B /* SignOutAreYouSureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutAreYouSureView.swift; sourceTree = "<group>"; };
 		E665C80E2B5ECF6000CD046B /* Color+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extensions.swift"; sourceTree = "<group>"; };
 		E665C8112B5ED2B800CD046B /* FlexButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexButton.swift; sourceTree = "<group>"; };
+		E665C8132B5ED6C100CD046B /* AccountDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsView.swift; sourceTree = "<group>"; };
+		E665C8152B5EDAD900CD046B /* MaxEditTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxEditTextField.swift; sourceTree = "<group>"; };
+		E665C8172B5EDFEC00CD046B /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +261,8 @@
 				E665C8052B5C528100CD046B /* ProfileListView.swift */,
 				E665C8072B5C529E00CD046B /* ProfileTopBar.swift */,
 				E665C8092B5C532100CD046B /* SignOutAreYouSureView.swift */,
+				E665C8132B5ED6C100CD046B /* AccountDetailsView.swift */,
+				E665C8172B5EDFEC00CD046B /* DevicesView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -371,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				E665C8112B5ED2B800CD046B /* FlexButton.swift */,
+				E665C8152B5EDAD900CD046B /* MaxEditTextField.swift */,
 			);
 			path = Accessory;
 			sourceTree = "<group>";
@@ -478,11 +487,13 @@
 				E665C80F2B5ECF6000CD046B /* Color+extensions.swift in Sources */,
 				E665C7E62B5A2C4300CD046B /* DownloadItemRowView.swift in Sources */,
 				E665C7E92B5A2FB900CD046B /* SearchView.swift in Sources */,
+				E665C8182B5EDFEC00CD046B /* DevicesView.swift in Sources */,
 				E665C8062B5C528100CD046B /* ProfileListView.swift in Sources */,
 				E665C7D82B5A19B000CD046B /* ContinueWatchingMediaItemRowView.swift in Sources */,
 				E665C7882B5995B500CD046B /* maxdemoApp.swift in Sources */,
 				E665C7A72B59A47000CD046B /* MediaItemColumnView.swift in Sources */,
 				E665C7FC2B5AF48500CD046B /* MediaQuickLookView.swift in Sources */,
+				E665C8142B5ED6C100CD046B /* AccountDetailsView.swift in Sources */,
 				E665C7F32B5AC9B700CD046B /* Update.swift in Sources */,
 				E665C7D62B5A180300CD046B /* MediaItemRowView.swift in Sources */,
 				E665C8012B5C521600CD046B /* AccountView.swift in Sources */,
@@ -498,6 +509,7 @@
 				E665C7BA2B59E99F00CD046B /* NavigationType.swift in Sources */,
 				E665C7CC2B5A03AB00CD046B /* MaxNavigationView.swift in Sources */,
 				E665C7C82B5A036000CD046B /* HomeView.swift in Sources */,
+				E665C8162B5EDADA00CD046B /* MaxEditTextField.swift in Sources */,
 				E665C7C22B59EA7F00CD046B /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

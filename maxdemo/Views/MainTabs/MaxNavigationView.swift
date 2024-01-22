@@ -23,8 +23,12 @@ struct MaxNavigationView: View {
                     switch type {
                     case .profile:
                         AccountView()
+                    case .accountDetails:
+                        AccountDetailsView()
                     case .updates:
                         UpdatesView()
+                    case .devices:
+                        DevicesView()
                     }
                 })
             

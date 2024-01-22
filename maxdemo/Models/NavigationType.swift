@@ -9,5 +9,7 @@ import Foundation
 
 enum NavigationType: Hashable {
     case profile
+    case accountDetails
     case updates
+    case devices
 }
