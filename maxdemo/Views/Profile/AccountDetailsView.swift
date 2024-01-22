@@ -36,7 +36,7 @@ struct AccountDetailsView: View {
                     MaxEditTextField(prompt: "Name", value: profileManager.account!.name, isSecureField: false)
                         .padding()
                 }
-                .background(Color.edit)
+                .background(Color.profileSettings)
                 .clipShape(RoundedRectangle(cornerRadius: 4))
                 .clipped()
                 .padding()
@@ -57,7 +57,7 @@ struct AccountDetailsView: View {
                         .frame(width: 15, height: 15)
                         .padding(12)
                 }
-                .background(Color.edit)
+                .background(Color.profileSettings)
                 .clipShape(RoundedRectangle(cornerRadius: 4))
                 .clipped()
                 .padding()

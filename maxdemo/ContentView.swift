@@ -19,7 +19,8 @@ struct ContentView: View {
         
         UINavigationBar.appearance().barTintColor = .clear
         let navAppearance = UINavigationBarAppearance()
-        navAppearance.backgroundColor = UIColor(Color.white)
+        navAppearance.backgroundColor = UIColor(Color.black)
+        navAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         UINavigationBar.appearance().standardAppearance = navAppearance
         UINavigationBar.appearance().compactScrollEdgeAppearance = navAppearance
     }

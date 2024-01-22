@@ -66,6 +66,9 @@
 		E665C8142B5ED6C100CD046B /* AccountDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8132B5ED6C100CD046B /* AccountDetailsView.swift */; };
 		E665C8162B5EDADA00CD046B /* MaxEditTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8152B5EDAD900CD046B /* MaxEditTextField.swift */; };
 		E665C8182B5EDFEC00CD046B /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8172B5EDFEC00CD046B /* DevicesView.swift */; };
+		E665C81A2B5EF34F00CD046B /* MaxLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8192B5EF34F00CD046B /* MaxLink.swift */; };
+		E665C81C2B5EF45F00CD046B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C81B2B5EF45F00CD046B /* Device.swift */; };
+		E665C81F2B5EF7D700CD046B /* DeviceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C81E2B5EF7D700CD046B /* DeviceRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +132,9 @@
 		E665C8132B5ED6C100CD046B /* AccountDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsView.swift; sourceTree = "<group>"; };
 		E665C8152B5EDAD900CD046B /* MaxEditTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxEditTextField.swift; sourceTree = "<group>"; };
 		E665C8172B5EDFEC00CD046B /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		E665C8192B5EF34F00CD046B /* MaxLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLink.swift; sourceTree = "<group>"; };
+		E665C81B2B5EF45F00CD046B /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		E665C81E2B5EF7D700CD046B /* DeviceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +212,7 @@
 				E665C7B92B59E99F00CD046B /* NavigationType.swift */,
 				E665C7C12B59EA7F00CD046B /* Account.swift */,
 				E665C7F22B5AC9B700CD046B /* Update.swift */,
+				E665C81B2B5EF45F00CD046B /* Device.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,6 +262,7 @@
 		E665C7BB2B59E9BC00CD046B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E665C81D2B5EF7C500CD046B /* Devices */,
 				E665C8022B5C522F00CD046B /* Settings */,
 				E665C7BC2B59E9CB00CD046B /* ProfileView.swift */,
 				E665C8002B5C521600CD046B /* AccountView.swift */,
@@ -262,7 +270,6 @@
 				E665C8072B5C529E00CD046B /* ProfileTopBar.swift */,
 				E665C8092B5C532100CD046B /* SignOutAreYouSureView.swift */,
 				E665C8132B5ED6C100CD046B /* AccountDetailsView.swift */,
-				E665C8172B5EDFEC00CD046B /* DevicesView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -380,8 +387,18 @@
 			children = (
 				E665C8112B5ED2B800CD046B /* FlexButton.swift */,
 				E665C8152B5EDAD900CD046B /* MaxEditTextField.swift */,
+				E665C8192B5EF34F00CD046B /* MaxLink.swift */,
 			);
 			path = Accessory;
+			sourceTree = "<group>";
+		};
+		E665C81D2B5EF7C500CD046B /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				E665C8172B5EDFEC00CD046B /* DevicesView.swift */,
+				E665C81E2B5EF7D700CD046B /* DeviceRowView.swift */,
+			);
+			path = Devices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +491,8 @@
 				E665C7B02B59AB5F00CD046B /* ContinueWatchingMediaItemColumnView.swift in Sources */,
 				E665C7C52B59F9B300CD046B /* UpdatesView.swift in Sources */,
 				E665C7EF2B5AC65100CD046B /* SearchRowView.swift in Sources */,
+				E665C81C2B5EF45F00CD046B /* Device.swift in Sources */,
+				E665C81A2B5EF34F00CD046B /* MaxLink.swift in Sources */,
 				E665C8122B5ED2B800CD046B /* FlexButton.swift in Sources */,
 				E665C7B42B59B4CE00CD046B /* TopItemsSection.swift in Sources */,
 				E665C7FE2B5AF69C00CD046B /* MediaMenuButton.swift in Sources */,
@@ -489,6 +508,7 @@
 				E665C7E92B5A2FB900CD046B /* SearchView.swift in Sources */,
 				E665C8182B5EDFEC00CD046B /* DevicesView.swift in Sources */,
 				E665C8062B5C528100CD046B /* ProfileListView.swift in Sources */,
+				E665C81F2B5EF7D700CD046B /* DeviceRowView.swift in Sources */,
 				E665C7D82B5A19B000CD046B /* ContinueWatchingMediaItemRowView.swift in Sources */,
 				E665C7882B5995B500CD046B /* maxdemoApp.swift in Sources */,
 				E665C7A72B59A47000CD046B /* MediaItemColumnView.swift in Sources */,

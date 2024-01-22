@@ -14,6 +14,21 @@ class ProfileManager: ObservableObject {
         .init(name: "John", profileImage: nil),
         .init(name: "Jim", profileImage: nil),
         .init(name: "Jack", profileImage: nil)
+    ], devices: [
+        .init(type: .xbox),
+        .init(type: .browser),
+        .init(type: .roku),
+        .init(type: .browser),
+        .init(type: .browser),
+        .init(type: .tv),
+        .init(type: .xbox),
+        .init(type: .browser),
+        .init(type: .tv),
+        .init(type: .browser),
+        .init(type: .browser),
+        .init(type: .roku),
+        .init(type: .browser),
+        
     ])
     @Published var selectedProfile: Profile? = nil
     
@@ -24,11 +39,33 @@ class ProfileManager: ObservableObject {
             .init(name: "Jim", profileImage: nil),
             .init(name: "Jack", profileImage: nil)
         ]
-        account = Account(profiles:profiles)
+        
+        let devices: [Device] =  [
+            .init(type: .xbox),
+            .init(type: .browser),
+            .init(type: .roku),
+            .init(type: .browser),
+            .init(type: .browser),
+            .init(type: .tv),
+            .init(type: .xbox),
+            .init(type: .browser),
+            .init(type: .tv),
+            .init(type: .browser),
+            .init(type: .browser),
+            .init(type: .roku),
+            .init(type: .browser),
+            
+        ]
+        account = Account(profiles:profiles, devices: devices)
         selectedProfile = profiles[0]
     }
     
     func signOut() {
         account = nil
     }
+    
+    func signDevicesOut() {
+        account?.devices = []
+    }
 }
+

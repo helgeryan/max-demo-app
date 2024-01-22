@@ -12,6 +12,7 @@ struct Account {
     let email: String = "rh@gmail.com"
     let password: String = "123456789"
     var profiles: [Profile]
+    var devices: [Device]
 }
 
 struct Profile: Equatable {
