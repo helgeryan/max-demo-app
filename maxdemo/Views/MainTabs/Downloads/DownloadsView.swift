@@ -21,7 +21,7 @@ struct DownloadsView: View {
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 8)
-                            .foregroundStyle(Color("editcolor"))
+                            .foregroundStyle(Color.edit)
                             .frame(width: buttonHeight, height: buttonHeight)
                         Image(systemName: "gear")
                             .resizable()
@@ -37,7 +37,7 @@ struct DownloadsView: View {
                 } label: {
                     ZStack {
                         RoundedRectangle(cornerRadius: 8)
-                            .foregroundStyle(Color("editcolor"))
+                            .foregroundStyle(Color.edit)
                             .frame(width: 130, height: buttonHeight)
                         Text("Edit")
                             .foregroundStyle(.white)

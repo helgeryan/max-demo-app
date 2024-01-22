@@ -7,9 +7,14 @@
 
 import Foundation
 
-
 class ProfileManager: ObservableObject {
-    @Published var account: Account? = nil
+    
+    @Published var account: Account? = Account(profiles: [
+        .init(name: "Ryan", profileImage: nil),
+        .init(name: "John", profileImage: nil),
+        .init(name: "Jim", profileImage: nil),
+        .init(name: "Jack", profileImage: nil)
+    ])
     @Published var selectedProfile: Profile? = nil
     
     func signIn() {

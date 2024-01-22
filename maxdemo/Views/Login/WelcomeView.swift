@@ -54,7 +54,7 @@ struct WelcomeView: View {
                         .font(.system(size: 15, weight: .bold))
                         .padding(.vertical)
                         .frame(maxWidth: .infinity)
-                        .background(Color("editcolor"))
+                        .background(Color.edit)
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         .clipped()
                 }

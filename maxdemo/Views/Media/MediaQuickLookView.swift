@@ -56,6 +56,6 @@ struct MediaQuickLookView: View {
                 Spacer()
             }
         }
-        .background(Color("tabbarcolor"))
+        .background(Color.darkGray)
     }
 }

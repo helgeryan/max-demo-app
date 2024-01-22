@@ -60,6 +60,8 @@
 		E665C8042B5C524000CD046B /* SettingMenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8032B5C524000CD046B /* SettingMenuRow.swift */; };
 		E665C8062B5C528100CD046B /* ProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8052B5C528100CD046B /* ProfileListView.swift */; };
 		E665C8082B5C529E00CD046B /* ProfileTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8072B5C529E00CD046B /* ProfileTopBar.swift */; };
+		E665C80A2B5C532100CD046B /* SignOutAreYouSureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8092B5C532100CD046B /* SignOutAreYouSureView.swift */; };
+		E665C80F2B5ECF6000CD046B /* Color+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C80E2B5ECF6000CD046B /* Color+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +119,8 @@
 		E665C8032B5C524000CD046B /* SettingMenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingMenuRow.swift; sourceTree = "<group>"; };
 		E665C8052B5C528100CD046B /* ProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListView.swift; sourceTree = "<group>"; };
 		E665C8072B5C529E00CD046B /* ProfileTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTopBar.swift; sourceTree = "<group>"; };
+		E665C8092B5C532100CD046B /* SignOutAreYouSureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutAreYouSureView.swift; sourceTree = "<group>"; };
+		E665C80E2B5ECF6000CD046B /* Color+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,11 +213,9 @@
 		E665C7A02B59A0F100CD046B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E665C7A12B59A0FF00CD046B /* CGFloat+Extensions.swift */,
-				E665C7DE2B5A279D00CD046B /* GradientBackground.swift */,
-				E665C7EA2B5A342100CD046B /* View+Extensions.swift */,
-				E665C7EC2B5AC4ED00CD046B /* UIApplication+extensions.swift */,
-				E665C7F92B5AEE7800CD046B /* ActivityViewController.swift */,
+				E665C80D2B5ECE6D00CD046B /* ViewControllerRepresentables */,
+				E665C80C2B5ECE5400CD046B /* Modifiers */,
+				E665C80B2B5ECE4400CD046B /* Extensions */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -249,6 +251,7 @@
 				E665C8002B5C521600CD046B /* AccountView.swift */,
 				E665C8052B5C528100CD046B /* ProfileListView.swift */,
 				E665C8072B5C529E00CD046B /* ProfileTopBar.swift */,
+				E665C8092B5C532100CD046B /* SignOutAreYouSureView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -332,6 +335,33 @@
 				E665C8032B5C524000CD046B /* SettingMenuRow.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		E665C80B2B5ECE4400CD046B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E665C7EC2B5AC4ED00CD046B /* UIApplication+extensions.swift */,
+				E665C7EA2B5A342100CD046B /* View+Extensions.swift */,
+				E665C7A12B59A0FF00CD046B /* CGFloat+Extensions.swift */,
+				E665C80E2B5ECF6000CD046B /* Color+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E665C80C2B5ECE5400CD046B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				E665C7DE2B5A279D00CD046B /* GradientBackground.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		E665C80D2B5ECE6D00CD046B /* ViewControllerRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				E665C7F92B5AEE7800CD046B /* ActivityViewController.swift */,
+			);
+			path = ViewControllerRepresentables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +448,7 @@
 				E665C7B62B59B53E00CD046B /* TopItemRowView.swift in Sources */,
 				E665C7972B59991800CD046B /* HeaderView.swift in Sources */,
 				E665C7FA2B5AEE7800CD046B /* ActivityViewController.swift in Sources */,
+				E665C80A2B5C532100CD046B /* SignOutAreYouSureView.swift in Sources */,
 				E665C79E2B5999B500CD046B /* CarouselCardView.swift in Sources */,
 				E665C7992B59993600CD046B /* CarouselView.swift in Sources */,
 				E665C7B02B59AB5F00CD046B /* ContinueWatchingMediaItemColumnView.swift in Sources */,
@@ -432,6 +463,7 @@
 				E665C7CE2B5A054700CD046B /* MyStuffView.swift in Sources */,
 				E665C7D12B5A16A100CD046B /* MyListView.swift in Sources */,
 				E665C7ED2B5AC4ED00CD046B /* UIApplication+extensions.swift in Sources */,
+				E665C80F2B5ECF6000CD046B /* Color+extensions.swift in Sources */,
 				E665C7E62B5A2C4300CD046B /* DownloadItemRowView.swift in Sources */,
 				E665C7E92B5A2FB900CD046B /* SearchView.swift in Sources */,
 				E665C8062B5C528100CD046B /* ProfileListView.swift in Sources */,

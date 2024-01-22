@@ -30,7 +30,7 @@ struct SearchView: View {
                     Spacer()
                 }
                 .padding()
-                .background(focusState ? Color("focuscolor") : Color("editcolor"))
+                .background(focusState ? Color.focus : Color.edit)
                 .clipShape(RoundedRectangle(cornerRadius: 4))
                 .clipped()
                 .onTapGesture {

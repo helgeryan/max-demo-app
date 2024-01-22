@@ -42,7 +42,7 @@ struct PrivacyView: View {
                         }
                     }
                 }
-                .background(Color("profilesettingscolor"))
+                .background(Color.profileSettings)
                 .clipShape(RoundedRectangle(cornerRadius: 3))
                 .clipped()
                 .padding([.horizontal, .top])

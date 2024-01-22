@@ -13,7 +13,7 @@ struct ContentView: View {
     init() {
         UITabBar.appearance().unselectedItemTintColor = UIColor(Color.gray)
         let appearance = UITabBarAppearance()
-        appearance.backgroundColor = UIColor(Color("tabbarcolor"))
+        appearance.backgroundColor = UIColor(.darkGray)
         UITabBar.appearance().standardAppearance = appearance
         UITabBar.appearance().scrollEdgeAppearance = appearance
         
