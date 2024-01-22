@@ -21,38 +21,18 @@ struct AreYouSureView: View {
                 .foregroundStyle(.white)
                 .padding()
             
-            Button {
-                debugPrint("Doing sign in")
-                confirmationAction()
+            FlexButton(text: confirmationText, backgroundColor: .white, foregroundColor: .black, action: {
                 isPresented = false
-            } label: {
-                Text(confirmationText)
-                    .foregroundStyle(.black)
-                    .font(.system(size: 15, weight: .bold))
-                    .padding(.vertical)
-                    .frame(maxWidth: .infinity)
-                    .background(.white)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .clipped()
-            }
+                confirmationAction()
+            })
             .padding(.horizontal)
             
-            Button {
-                debugPrint("Doing cancel")
+            FlexButton(text: cancelText, backgroundColor: .edit, foregroundColor: .white, action: {
                 if let cancelAction = cancelAction {
                     cancelAction()
                 }
                 isPresented = false
-            } label: {
-                Text(cancelText)
-                    .foregroundStyle(.white)
-                    .font(.system(size: 15, weight: .bold))
-                    .padding(.vertical)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.edit)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .clipped()
-            }
+            })
             .padding(.horizontal)
         }
         .padding()

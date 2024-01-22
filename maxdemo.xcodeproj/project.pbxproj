@@ -62,6 +62,7 @@
 		E665C8082B5C529E00CD046B /* ProfileTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8072B5C529E00CD046B /* ProfileTopBar.swift */; };
 		E665C80A2B5C532100CD046B /* SignOutAreYouSureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8092B5C532100CD046B /* SignOutAreYouSureView.swift */; };
 		E665C80F2B5ECF6000CD046B /* Color+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C80E2B5ECF6000CD046B /* Color+extensions.swift */; };
+		E665C8122B5ED2B800CD046B /* FlexButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8112B5ED2B800CD046B /* FlexButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +122,7 @@
 		E665C8072B5C529E00CD046B /* ProfileTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTopBar.swift; sourceTree = "<group>"; };
 		E665C8092B5C532100CD046B /* SignOutAreYouSureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutAreYouSureView.swift; sourceTree = "<group>"; };
 		E665C80E2B5ECF6000CD046B /* Color+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extensions.swift"; sourceTree = "<group>"; };
+		E665C8112B5ED2B800CD046B /* FlexButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 		E665C7952B59990B00CD046B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E665C8102B5ED29B00CD046B /* Accessory */,
 				E665C7F42B5ACD8900CD046B /* Login */,
 				E665C7C62B5A035300CD046B /* MainTabs */,
 				E665C7C32B59F9A600CD046B /* Updates */,
@@ -364,6 +367,14 @@
 			path = ViewControllerRepresentables;
 			sourceTree = "<group>";
 		};
+		E665C8102B5ED29B00CD046B /* Accessory */ = {
+			isa = PBXGroup;
+			children = (
+				E665C8112B5ED2B800CD046B /* FlexButton.swift */,
+			);
+			path = Accessory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -454,6 +465,7 @@
 				E665C7B02B59AB5F00CD046B /* ContinueWatchingMediaItemColumnView.swift in Sources */,
 				E665C7C52B59F9B300CD046B /* UpdatesView.swift in Sources */,
 				E665C7EF2B5AC65100CD046B /* SearchRowView.swift in Sources */,
+				E665C8122B5ED2B800CD046B /* FlexButton.swift in Sources */,
 				E665C7B42B59B4CE00CD046B /* TopItemsSection.swift in Sources */,
 				E665C7FE2B5AF69C00CD046B /* MediaMenuButton.swift in Sources */,
 				E665C7DB2B5A275100CD046B /* MyStuffOptionsView.swift in Sources */,

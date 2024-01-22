@@ -31,35 +31,17 @@ struct WelcomeView: View {
                     .multilineTextAlignment(.center)
                     .font(.system(size: 20, weight: .regular))
                 
-                Button {
-                    debugPrint("Doing subscribe")
-                } label: {
-                    Text("Subscribe Now")
-                        .foregroundStyle(.black)
-                        .font(.system(size: 15, weight: .bold))
-                        .padding(.vertical)
-                        .frame(maxWidth: .infinity)
-                        .background(.white)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .clipped()
-                }
-                .padding()
+            FlexButton(text: "Subscribe Now", backgroundColor: .white, foregroundColor: .black, action: {
+                debugPrint("Doing subscribe")
+            })
+            .padding()
                 
-                Button {
-                    debugPrint("Doing sign in")
-                    profileManager.signIn()
-                } label: {
-                    Text("Sign In")
-                        .foregroundStyle(.white)
-                        .font(.system(size: 15, weight: .bold))
-                        .padding(.vertical)
-                        .frame(maxWidth: .infinity)
-                        .background(Color.edit)
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .clipped()
-                }
-                .padding(.horizontal)
-                .padding(.bottom, 50)
+            FlexButton(text: "Sign In", backgroundColor: .edit, foregroundColor: .white, action: {
+                debugPrint("Doing sign in")
+                profileManager.signIn()
+            })
+            .padding(.horizontal)
+            .padding(.bottom, 50)
              
              NavigationLink(destination: {
                  PrivacyView()
