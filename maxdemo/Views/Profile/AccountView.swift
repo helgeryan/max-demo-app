@@ -14,7 +14,7 @@ struct AccountView: View {
 
     var body: some View {
         let settingsMenuItems: [SettingsMenuItem] = [
-            .init(text: "App Settings", action: { }),
+            .init(text: "App Settings", navigationType: .appSettings),
             .init(text: "Account", navigationType: .accountDetails),
             .init(text: "Subscription", action: { }),
             .init(text: "Privacy & Terms", action: { }),

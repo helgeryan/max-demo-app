@@ -12,4 +12,8 @@ enum NavigationType: Hashable {
     case accountDetails
     case updates
     case devices
+    case downloadSettings
+    case notificationSettings
+    case deviceInfo
+    case appSettings
 }
