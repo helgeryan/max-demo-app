@@ -34,7 +34,7 @@ struct MaxNavigationView: View {
                     case .notificationSettings:
                         AppSettingsView()
                     case .deviceInfo:
-                        AppSettingsView()
+                        DeviceInfoView()
                     case .appSettings:
                         AppSettingsView()
                     }

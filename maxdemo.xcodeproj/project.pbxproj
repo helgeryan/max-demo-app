@@ -72,6 +72,7 @@
 		E665C8212B5F610300CD046B /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8202B5F610300CD046B /* AppSettingsView.swift */; };
 		E665C8232B5F61F400CD046B /* MaxNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8222B5F61F400CD046B /* MaxNavigationLink.swift */; };
 		E665C8252B5F679C00CD046B /* SettingToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8242B5F679C00CD046B /* SettingToggleView.swift */; };
+		E665C8272B5F716700CD046B /* DeviceInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8262B5F716700CD046B /* DeviceInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +142,7 @@
 		E665C8202B5F610300CD046B /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
 		E665C8222B5F61F400CD046B /* MaxNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxNavigationLink.swift; sourceTree = "<group>"; };
 		E665C8242B5F679C00CD046B /* SettingToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingToggleView.swift; sourceTree = "<group>"; };
+		E665C8262B5F716700CD046B /* DeviceInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +408,7 @@
 			children = (
 				E665C8172B5EDFEC00CD046B /* DevicesView.swift */,
 				E665C81E2B5EF7D700CD046B /* DeviceRowView.swift */,
+				E665C8262B5F716700CD046B /* DeviceInfoView.swift */,
 			);
 			path = Devices;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				E665C7E62B5A2C4300CD046B /* DownloadItemRowView.swift in Sources */,
 				E665C7E92B5A2FB900CD046B /* SearchView.swift in Sources */,
 				E665C8182B5EDFEC00CD046B /* DevicesView.swift in Sources */,
+				E665C8272B5F716700CD046B /* DeviceInfoView.swift in Sources */,
 				E665C8062B5C528100CD046B /* ProfileListView.swift in Sources */,
 				E665C8232B5F61F400CD046B /* MaxNavigationLink.swift in Sources */,
 				E665C81F2B5EF7D700CD046B /* DeviceRowView.swift in Sources */,
