@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DownloadItemRowView: View {
+    @State var isDownloadActionsPresented: Bool = false
     var mediaItem: MediaItem
     var body: some View {
         NavigationLink(value: mediaItem, label: {
@@ -36,7 +37,7 @@ struct DownloadItemRowView: View {
                 Spacer()
                 
                 Button {
-                    debugPrint("Do action items")
+                    isDownloadActionsPresented = true
                 } label: {
                     Image(systemName: "clock")
                         .resizable()
@@ -46,6 +47,11 @@ struct DownloadItemRowView: View {
                         .padding(5)
                 }
                 .shadow(radius: 10)
+                .sheet(isPresented: $isDownloadActionsPresented) {
+                    MediaDownloadActionView(isPresented: $isDownloadActionsPresented, item: mediaItem)
+                        .presentationDetents([.height(250)])
+                        .presentationDragIndicator(.visible)
+                }
             }
         })
     }

@@ -23,6 +23,7 @@ class MediaManager: ObservableObject {
     
     
     @Published var myListItems: [MediaItem] = []
+    @Published var myDowloadedItems: [MediaItem] = []
     
     func getCarousel() -> [CarouselItem] {
         return items.filter({ return !$0.secondaryImage.isEmpty}).enumerated().map({ return .init(media: $1, index: $0)})
@@ -57,6 +58,6 @@ class MediaManager: ObservableObject {
     
     func getUpdates() -> [Update] {
         return items.map({ return .init(item: $0, title: "The Story Continues", description: "Don't miss the latest episode!") })
-        
     }
+    
 }

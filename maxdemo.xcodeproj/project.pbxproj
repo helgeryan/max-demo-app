@@ -73,6 +73,8 @@
 		E665C8232B5F61F400CD046B /* MaxNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8222B5F61F400CD046B /* MaxNavigationLink.swift */; };
 		E665C8252B5F679C00CD046B /* SettingToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8242B5F679C00CD046B /* SettingToggleView.swift */; };
 		E665C8272B5F716700CD046B /* DeviceInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8262B5F716700CD046B /* DeviceInfoView.swift */; };
+		E665C8292B6009EC00CD046B /* MediaDownloadActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8282B6009EC00CD046B /* MediaDownloadActionView.swift */; };
+		E665C82B2B601C1F00CD046B /* MediaDownloadActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C82A2B601C1F00CD046B /* MediaDownloadActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +145,8 @@
 		E665C8222B5F61F400CD046B /* MaxNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxNavigationLink.swift; sourceTree = "<group>"; };
 		E665C8242B5F679C00CD046B /* SettingToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingToggleView.swift; sourceTree = "<group>"; };
 		E665C8262B5F716700CD046B /* DeviceInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoView.swift; sourceTree = "<group>"; };
+		E665C8282B6009EC00CD046B /* MediaDownloadActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDownloadActionView.swift; sourceTree = "<group>"; };
+		E665C82A2B601C1F00CD046B /* MediaDownloadActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDownloadActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +258,8 @@
 				E665C7B12B59B4AB00CD046B /* TopItemsSectionView.swift */,
 				E665C7FB2B5AF48500CD046B /* MediaQuickLookView.swift */,
 				E665C7FD2B5AF69C00CD046B /* MediaMenuButton.swift */,
+				E665C8282B6009EC00CD046B /* MediaDownloadActionView.swift */,
+				E665C82A2B601C1F00CD046B /* MediaDownloadActionButton.swift */,
 			);
 			path = Media;
 			sourceTree = "<group>";
@@ -483,8 +489,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E665C82B2B601C1F00CD046B /* MediaDownloadActionButton.swift in Sources */,
 				E665C7F12B5AC9A200CD046B /* UpdateRowView.swift in Sources */,
 				E665C8212B5F610300CD046B /* AppSettingsView.swift in Sources */,
+				E665C8292B6009EC00CD046B /* MediaDownloadActionView.swift in Sources */,
 				E665C7F62B5ACDAF00CD046B /* WelcomeView.swift in Sources */,
 				E665C7AC2B59A76500CD046B /* MediaManager.swift in Sources */,
 				E665C78A2B5995B500CD046B /* ContentView.swift in Sources */,
