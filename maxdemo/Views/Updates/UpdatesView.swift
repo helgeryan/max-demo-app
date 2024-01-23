@@ -11,7 +11,8 @@ struct UpdatesView: View {
     @EnvironmentObject var mediaManager: MediaManager
     @Environment(\.dismiss) var dismiss
     var body: some View {
-        VStack {
+        
+        let content = VStack {
             UpdatesTopBar(title: "Updates", dismissAction: { dismiss() })
             
             ScrollView {
@@ -27,6 +28,8 @@ struct UpdatesView: View {
         }
         .modifier(GradientBackground())
         .navigationBarBackButtonHidden(true)
+        
+        MaxNavigationView(content: AnyView(content))
     }
 }
 
