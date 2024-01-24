@@ -75,6 +75,8 @@
 		E665C8272B5F716700CD046B /* DeviceInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8262B5F716700CD046B /* DeviceInfoView.swift */; };
 		E665C8292B6009EC00CD046B /* MediaDownloadActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8282B6009EC00CD046B /* MediaDownloadActionView.swift */; };
 		E665C82B2B601C1F00CD046B /* MediaDownloadActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C82A2B601C1F00CD046B /* MediaDownloadActionButton.swift */; };
+		E665C86A2B60915B00CD046B /* DownloadSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C8692B60915B00CD046B /* DownloadSettingsView.swift */; };
+		E665C86C2B60BC0000CD046B /* UIDevice+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665C86B2B60BC0000CD046B /* UIDevice+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +149,8 @@
 		E665C8262B5F716700CD046B /* DeviceInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoView.swift; sourceTree = "<group>"; };
 		E665C8282B6009EC00CD046B /* MediaDownloadActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDownloadActionView.swift; sourceTree = "<group>"; };
 		E665C82A2B601C1F00CD046B /* MediaDownloadActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDownloadActionButton.swift; sourceTree = "<group>"; };
+		E665C8692B60915B00CD046B /* DownloadSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadSettingsView.swift; sourceTree = "<group>"; };
+		E665C86B2B60BC0000CD046B /* UIDevice+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				E665C8032B5C524000CD046B /* SettingMenuRow.swift */,
+				E665C8692B60915B00CD046B /* DownloadSettingsView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -377,6 +382,7 @@
 				E665C7EA2B5A342100CD046B /* View+Extensions.swift */,
 				E665C7A12B59A0FF00CD046B /* CGFloat+Extensions.swift */,
 				E665C80E2B5ECF6000CD046B /* Color+extensions.swift */,
+				E665C86B2B60BC0000CD046B /* UIDevice+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -506,10 +512,12 @@
 				E665C7B62B59B53E00CD046B /* TopItemRowView.swift in Sources */,
 				E665C7972B59991800CD046B /* HeaderView.swift in Sources */,
 				E665C7FA2B5AEE7800CD046B /* ActivityViewController.swift in Sources */,
+				E665C86C2B60BC0000CD046B /* UIDevice+extensions.swift in Sources */,
 				E665C80A2B5C532100CD046B /* SignOutAreYouSureView.swift in Sources */,
 				E665C79E2B5999B500CD046B /* CarouselCardView.swift in Sources */,
 				E665C7992B59993600CD046B /* CarouselView.swift in Sources */,
 				E665C7B02B59AB5F00CD046B /* ContinueWatchingMediaItemColumnView.swift in Sources */,
+				E665C86A2B60915B00CD046B /* DownloadSettingsView.swift in Sources */,
 				E665C7C52B59F9B300CD046B /* UpdatesView.swift in Sources */,
 				E665C7EF2B5AC65100CD046B /* SearchRowView.swift in Sources */,
 				E665C81C2B5EF45F00CD046B /* Device.swift in Sources */,
